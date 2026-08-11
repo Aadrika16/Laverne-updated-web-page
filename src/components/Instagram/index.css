@@ -1,0 +1,102 @@
+.instagram-section {
+  padding: 60px 8%;
+  background-color: #f7f4ee;
+  border-bottom: 1px solid #e6dec5;
+}
+
+.insta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.insta-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.insta-icon-main {
+  font-size: 28px;
+  color: #333;
+}
+
+.insta-title-group h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.insta-title-group span {
+  font-size: 12px;
+  color: #666;
+}
+
+.insta-sub {
+  font-size: 12px;
+  color: #555;
+  max-width: 300px;
+  margin: 0;
+}
+
+.insta-follow-btn {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.insta-item {
+  position: relative;
+  height: 180px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.insta-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.insta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.insta-item:hover .insta-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .insta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

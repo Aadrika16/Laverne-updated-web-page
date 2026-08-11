@@ -1,0 +1,90 @@
+.hero-section {
+  position: relative;
+  height: 85vh;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  color: white;
+}
+
+.hero-content {
+  max-width: 500px;
+  background: rgba(20, 20, 20, 0.45);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-subtitle {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #dfd3c3;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: serif;
+}
+
+.hero-content p {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.explore-btn {
+  background-color: #a06e3b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #84572c;
+}
+
+.hero-dots {
+  position: absolute;
+  bottom: 25px;
+  right: 8%;
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  width: 25px;
+  border-radius: 4px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 20px;
+    max-width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 28px;
+  }
+}

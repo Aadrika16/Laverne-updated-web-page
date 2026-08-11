@@ -1,0 +1,8 @@
+/* src/pages/Home/index.css */
+.home-container {
+  width: 100%;
+  background-color: #f7f4ee;
+  color: #2b2b2b;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}

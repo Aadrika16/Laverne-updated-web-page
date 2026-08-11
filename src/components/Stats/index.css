@@ -1,0 +1,43 @@
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 5%;
+  background: #f7f4ee;
+  border-bottom: 1px solid #e6dec5;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.stat-icon {
+  font-size: 28px;
+  color: #a06e3b;
+  border: 1px solid #d4c5ab;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.stat-item h3 {
+  font-size: 20px;
+  margin: 0;
+  color: #222;
+}
+
+.stat-item p {
+  font-size: 12px;
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 8%;
+  }
+}
