@@ -1,73 +1,102 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 
-const products = [
+const signatureItems = [
   {
     id: 1,
-    title: 'Nordic Oak Lounge Chair',
-    category: 'SOLID WHITE OAK & LINEN',
-    price: '$850',
-    image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=600'
+    title: 'Tree House/Play House',
+    subtitle: 'OUR SIGNATURE COLLECTION',
+    description: 'Nature inspired retreats that reconnect you.',
+    image: '/carousalimages/TreeHouse.png'
   },
   {
     id: 2,
-    title: 'Walnut Round Dining Table',
-    category: 'SOLID WALNUT',
-    price: '$1,650',
-    image: 'https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=600'
+    title: 'Indoor Activity loft',
+    subtitle: 'OUR SIGNATURE COLLECTION',
+    description: 'Playful interiors that spark creativity every day.',
+    image: '/carousalimages/IndoorActivityloft.png'
   },
   {
     id: 3,
-    title: 'Heritage Teak Sideboard',
-    category: 'RECLAIMED TEAK',
-    price: '$1,250',
-    image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600'
+    title: 'Outdoor Activity loft',
+    subtitle: 'OUR SIGNATURE COLLECTION',
+    description: 'Designed for adventure, built for memories.',
+    image: '/carousalimages/OutdoorActivityloft.png'
   },
   {
     id: 4,
-    title: 'Ash Wood Pendant Light',
-    category: 'HAND-TURNED ASH',
-    price: '$320',
-    image: 'https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&q=80&w=600'
+    title: 'Kids Interior',
+    subtitle: 'OUR SIGNATURE COLLECTION',
+    description: 'Thoughtfully designed spaces for little imaginations.',
+    image: '/carousalimages/KidsInterior.png'
+  },
+  {
+    id: 5,
+    title: 'Custom Made',
+    subtitle: 'OUR SIGNATURE COLLECTION',
+    description: 'Bespoke designs tailored uniquely for you.',
+    image: '/carousalimages/CustomMade.png'
   }
 ];
 
 const Collections = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsPerPage = 3;
+
+  const handlePrev = () => {
+    setCurrentIndex(0);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex(2);
+  };
+
+  const visibleItems = signatureItems.slice(currentIndex, currentIndex + itemsPerPage);
+
   return (
     <div className="collections-section" id="collections">
-      <div className="collections-header">
-        <div>
-          <span className="section-tag">HANDMADE CATALOG</span>
-          <h2>Curated Collections</h2>
-        </div>
-        <span className="view-all">View All Collections &rarr;</span>
+      <div className="signature-header">
+        <span className="section-subtitle">OUR SIGNATURE COLLECTION</span>
+        <h2>Signature Collection</h2>
+        <p className="section-desc">
+          Curated spaces, crafted with intention.<br />
+          Explore our signature offerings designed to inspire, engage and elevate.
+        </p>
       </div>
 
-      <div className="filter-tabs">
-        <button className="filter-btn active">All</button>
-        <button className="filter-btn">Living Room</button>
-        <button className="filter-btn">Dining</button>
-        <button className="filter-btn">Decor</button>
-        <button className="filter-btn">Lighting</button>
-      </div>
-
-      <div className="product-grid">
-        {products.map((item) => (
-          <div className="product-card" key={item.id}>
-            <div className="product-img-wrapper">
-              <span className="quick-view-badge">QUICK VIEW</span>
+      <div className="signature-grid">
+        {visibleItems.map((item) => (
+          <div className="signature-card" key={item.id}>
+            <div className="signature-img-wrapper">
               <img src={item.image} alt={item.title} />
             </div>
-            <div className="product-info">
-              <span className="product-category">{item.category}</span>
-              <h4>{item.title}</h4>
-              <div className="product-footer">
-                <span className="price">{item.price}</span>
-                <span className="add-to-cart">Add to Cart +</span>
+            <div className="signature-content">
+              <div className="signature-icon-circle">
+                <span className="icon-symbol">✦</span>
               </div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Highlighted Navigation Arrows Placed Below */}
+      <div className="carousel-arrows-bottom">
+        <button 
+          className={`carousel-arrow-btn ${currentIndex === 0 ? 'disabled' : ''}`} 
+          onClick={handlePrev}
+          disabled={currentIndex === 0}
+        >
+          &#8592; Prev
+        </button>
+        <button 
+          className={`carousel-arrow-btn ${currentIndex === 2 ? 'disabled' : ''}`} 
+          onClick={handleNext}
+          disabled={currentIndex === 2}
+        >
+          Next &#8594;
+        </button>
       </div>
     </div>
   );

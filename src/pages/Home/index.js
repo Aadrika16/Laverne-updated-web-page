@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Hero from '../../components/Hero';
-import Stats from '../../components/Stats';
 import Collections from '../../components/Collections';
+import CuratedCategories from '../../components/CuratedCategories';
 import FounderStory from '../../components/FounderStory';
-import SignatureCrafts from '../../components/SignatureCrafts';
+import ExclusiveCollection from '../../components/ExclusiveCollection';
 import Instagram from '../../components/Instagram';
 import Footer from '../../components/Footer';
 import './index.css';
@@ -14,10 +14,11 @@ const Home = () => {
     <div className="home-container">
       <Navbar />
       <Hero />
-      <Stats />
       <Collections />
+      <CuratedCategories />
       <FounderStory />
-      <SignatureCrafts />
+      <ExclusiveCollection />
+      
       <Instagram />
       <Footer />
     </div>
