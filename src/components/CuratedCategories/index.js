@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 
-// Main Category Cards with all their exact sub-items including the 10th Interiors category
+// Main Category Cards including Outdoors and Artifacts & Decors
 const categoriesData = [
   {
     id: "beds",
@@ -146,6 +146,24 @@ const categoriesData = [
       { id: 14, title: "Pool & Billiards Rooms", image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800" },
       { id: 15, title: "Custom Interior Projects", image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" }
     ]
+  },
+ {
+    id: "outdoors",
+    title: "Outdoors",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+    items: [
+      { id: 1, title: "1. Terrace", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" },
+      { id: 2, title: "2. Backyards", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" }
+    ]
+  },
+  {
+    id: "artifacts-decors",
+    title: "Artifacts and Decors",
+    image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800",
+    items: [
+      { id: 1, title: "1. Artifacts", image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800" },
+      { id: 2, title: "2. Decors", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800" }
+    ]
   }
 ];
 
@@ -170,13 +188,11 @@ const CuratedCategories = () => {
     };
   }, []);
 
-  // Pagination for Main Cards View (3 cards per page)
   const mainItemsPerPage = 3;
   const mainTotalPages = Math.ceil(categoriesData.length / mainItemsPerPage);
   const mainStartIndex = mainCardsPage * mainItemsPerPage;
   const visibleMainCards = categoriesData.slice(mainStartIndex, mainStartIndex + mainItemsPerPage);
 
-  // Pagination for Sub-items View
   const activeSubItems = selectedCategory ? selectedCategory.items : [];
   const isScrollable = activeSubItems.length > 2;
   const itemsPerPage = isScrollable ? 3 : activeSubItems.length;
@@ -221,12 +237,7 @@ const CuratedCategories = () => {
       {!selectedCategory ? (
         <div className="main-categories-view">
           <div className="signature-grid-wrapper">
-            <button 
-              className="carousel-arrow left-arrow" 
-              onClick={handleMainPrev}
-            >
-              &#8592;
-            </button>
+            <button className="carousel-arrow left-arrow" onClick={handleMainPrev}>&#8592;</button>
 
             <div className="signature-grid">
               {visibleMainCards.map((cat) => (
@@ -249,12 +260,7 @@ const CuratedCategories = () => {
               ))}
             </div>
 
-            <button 
-              className="carousel-arrow right-arrow" 
-              onClick={handleMainNext}
-            >
-              &#8594;
-            </button>
+            <button className="carousel-arrow right-arrow" onClick={handleMainNext}>&#8594;</button>
           </div>
 
           <div className="signature-dots">
@@ -271,12 +277,7 @@ const CuratedCategories = () => {
         <div className="category-block active-subview">
           <div className="signature-grid-wrapper">
             {isScrollable && (
-              <button 
-                className="carousel-arrow left-arrow" 
-                onClick={handleSubPrev}
-              >
-                &#8592;
-              </button>
+              <button className="carousel-arrow left-arrow" onClick={handleSubPrev}>&#8592;</button>
             )}
 
             <div className={`signature-grid ${!isScrollable ? 'two-items-grid' : ''}`}>
@@ -296,12 +297,7 @@ const CuratedCategories = () => {
             </div>
 
             {isScrollable && (
-              <button 
-                className="carousel-arrow right-arrow" 
-                onClick={handleSubNext}
-              >
-                &#8594;
-              </button>
+              <button className="carousel-arrow right-arrow" onClick={handleSubNext}>&#8594;</button>
             )}
           </div>
 
