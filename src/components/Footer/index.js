@@ -1,11 +1,12 @@
 import React from 'react';
 import './index.css';
-import { FiInstagram, FiGlobe, FiFacebook, FiYoutube } from 'react-icons/fi';
+import { FiInstagram, FiGlobe, FiFacebook, FiYoutube, FiMail, FiPhone } from 'react-icons/fi';
 
 const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="footer-grid">
+        {/* Column 1: Brand & Bio */}
         <div className="footer-col-brand">
           <h2>LAVERNE</h2>
           <span>STUDIO</span>
@@ -18,6 +19,7 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Column 2: Shop Links */}
         <div className="footer-col-links">
           <h4>SHOP</h4>
           <ul>
@@ -29,6 +31,7 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Column 3: Customer Care Links */}
         <div className="footer-col-links">
           <h4>CUSTOMER CARE</h4>
           <ul>
@@ -40,19 +43,25 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer-col-newsletter">
-          <h4>Join the Inner Circle</h4>
-          <p>Receive private previews of new collections and woodworking tips.</p>
-          <div className="newsletter-input-box">
-            <input type="email" placeholder="Enter your email" />
-            <button>SUBSCRIBE</button>
-          </div>
-          <div className="payment-badges">
-            <span>VISA</span>
-            <span>MC</span>
-            <span>AMEX</span>
-            <span>PAY</span>
-          </div>
+        {/* Column 4: Contact Info (Matching Reference Image) */}
+        <div className="footer-col-contact">
+          <ul>
+            <li>
+              <FiMail className="footer-contact-icon" /> hello@lavernestudio.in
+            </li>
+            <li>
+              <FiInstagram className="footer-contact-icon" /> @lavernestudio
+            </li>
+            <li>
+              <FiPhone className="footer-contact-icon" /> +91 98765 43210
+            </li>
+            <li>
+              <FiYoutube className="footer-contact-icon" /> Laverne Studio
+            </li>
+            <li>
+              <FiFacebook className="footer-contact-icon" /> Laverne Studio
+            </li>
+          </ul>
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './index.css';
 
 const FounderStory = () => {
@@ -13,7 +13,7 @@ const FounderStory = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.1 }
     );
 
     if (currentSection) {
@@ -29,38 +29,41 @@ const FounderStory = () => {
 
   return (
     <section 
-      className={`story-section ${isVisible ? 'scroll-reveal-active' : ''}`} 
-      id="story"
+      className={`founder-story-section ${isVisible ? 'scroll-reveal-active' : ''}`}
       ref={sectionRef}
     >
-      <div className="story-text-content">
-        <span className="section-tag">THE ARTISAN HERITAGE</span>
-        <h2>Carved by Passion, Defined by Nature.</h2>
-        <p className="story-desc">
-          Every piece of wood tells a story. Founded in 2015, our workshop bridges traditional woodworking techniques with contemporary minimalist design. We believe in creating heirlooms that last for generations.
-        </p>
-        <div className="signature-area">
-          <span className="signature-font">Julian Vance</span>
-          <span className="founder-title">Master Woodworker & Founder</span>
-        </div>
-        <span className="read-story">Read Our Full Story &rarr;</span>
-      </div>
+      <div className="founder-container">
+        <h2 className="founder-main-title">Laverne Studio</h2>
+        
+        <div className="founder-content-grid">
+          <div className="founder-text-column">
+            <p>
+              At Laverne Studio, we believe beautiful interiors begin with intention. 
+              We blend timeless design with thoughtful details to create pieces that 
+              bring warmth, balance and character into your home.
+            </p>
+            <p>
+              From natural materials to custom finishes, every element is chosen 
+              with care. Our collections are designed to mix, match and evolve 
+              with your space and your story.
+            </p>
+            <p className="founder-highlight-text">
+              <strong>Imagine it. Personalise it. Live with it.</strong>
+            </p>
+            <p>
+              Let’s create something uniquely yours.<br />
+              Explore Laverne Studio today.
+            </p>
+          </div>
 
-      <div className="story-image-grid">
-        <div className="main-artisan-img">
-          <img 
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800" 
-            alt="Artisan working" 
-          />
-        </div>
-        <div className="floating-quote-box">
-          <p>"Wood remembers every hand that shapes it."</p>
-        </div>
-        <div className="small-artisan-img">
-          <img 
-            src="https://res.cloudinary.com/doyaebals/image/upload/v1786433044/ChatGPT_Image_Aug_11_2026_12_53_53_PM_huqrcu.png" 
-            alt="Chiseling wood" 
-          />
+          <div className="founder-image-column">
+            <div className="founder-image-wrapper">
+              <img 
+                src="/carousalimages/ChatGPT Image Aug 20, 2026, 12_02_46 PM.png"
+                alt="Laverne Studio Interior Setup" 
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

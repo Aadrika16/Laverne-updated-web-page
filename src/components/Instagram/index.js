@@ -1,44 +1,123 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 import { FiInstagram } from 'react-icons/fi';
 
-const instaImages = [
-  { id: 1, likes: '1.4k', comments: '48', url: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=300' },
-  { id: 2, likes: '982', comments: '36', url: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=300' },
-  { id: 3, likes: '1.1k', comments: '52', url: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=300' },
-  { id: 4, likes: '1.6k', comments: '64', url: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=300' },
-  { id: 5, likes: '1.3k', comments: '40', url: 'https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=300' }
-];
-
 const Instagram = () => {
+  const [instaImages, setInstaImages] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const currentSection = sectionRef.current;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (currentSection) {
+      observer.observe(currentSection);
+    }
+
+    return () => {
+      if (currentSection) {
+        observer.unobserve(currentSection);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const fetchInstagramFeed = async () => {
+      try {
+        const response = await fetch('https://feeds.behold.so/jIkhjfVerdMi05W0MBzr');
+        
+        if (!response.ok) {
+          throw new Error('Failed to fetch Instagram feed');
+        }
+
+        const data = await response.json();
+        const postsArray = data.posts || (Array.isArray(data) ? data : []);
+
+        const mappedPosts = postsArray
+          .slice(0, 6)
+          .map((post) => ({
+            id: post.id || Math.random(),
+            // Safely extracts from Behold's optimized sizes object or direct media urls
+            url: post.sizes?.medium?.mediaUrl || post.sizes?.large?.mediaUrl || post.mediaUrl || post.thumbnailUrl,
+            permalink: post.permalink || "https://instagram.com/lavernestudio.in",
+            likes: post.likeCount || '0',
+            comments: post.commentsCount || '0'
+          }))
+          .filter(post => post.url);
+
+        setInstaImages(mappedPosts);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching live Instagram feed:', error);
+        setLoading(false);
+      }
+    };
+
+    fetchInstagramFeed();
+  }, []);
+
   return (
-    <div className="instagram-section">
-      <div className="insta-header">
-        <div className="insta-title-group">
-          <FiInstagram className="insta-icon-main" />
+    <section 
+      className={`instagram-section ${isVisible ? 'scroll-reveal-active' : ''}`}
+      ref={sectionRef}
+    >
+      <div className="insta-profile-header">
+        <div className="insta-profile-info">
+          <div className="insta-avatar-circle">
+            <FiInstagram className="insta-avatar-icon" />
+          </div>
           <div>
-            <h3>Follow Our Journey</h3>
-            <span>@LaverneStudio</span>
+            <div className="insta-handle-row">
+              <h3>lavernestudio.in</h3>
+              <a 
+                href="https://instagram.com/lavernestudio.in" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="insta-profile-follow-btn"
+              >
+                Follow
+              </a>
+            </div>
+            <p className="insta-bio">
+              Handcrafted Wooden Furniture & Decor • Custom Designs & Spaces • Made for You
+            </p>
           </div>
         </div>
-        <p className="insta-sub">Behind the scenes, new creations, and woodworking tips.</p>
-        <button className="insta-follow-btn">
-          <FiInstagram /> Follow on Instagram
-        </button>
       </div>
 
-      <div className="insta-grid">
-        {instaImages.map((img) => (
-          <div className="insta-item" key={img.id}>
-            <img src={img.url} alt="Instagram post" />
-            <div className="insta-overlay">
-              <span>❤️ {img.likes}</span>
-              <span>💬 {img.comments}</span>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+      {loading ? (
+        <div className="insta-loading">Loading live updates...</div>
+      ) : instaImages.length === 0 ? (
+        <div className="insta-loading">No posts found. Please check your Behold feed settings.</div>
+      ) : (
+        <div className="insta-grid">
+          {instaImages.map((img) => (
+            <a 
+              href={img.permalink} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="insta-item" 
+              key={img.id}
+            >
+              <img src={img.url} alt="Instagram post" />
+              <div className="insta-overlay">
+                <span>❤️ {img.likes}</span>
+                <span>💬 {img.comments}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </section>
   );
 };
 
