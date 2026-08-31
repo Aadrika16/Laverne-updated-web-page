@@ -17,8 +17,8 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: flex-end; /* Align contents to the bottom */
-  padding: 0 8% 8% 8%; /* Bottom padding creates space from edge */
+  align-items: flex-end;
+  padding: 0 8% 8% 8%;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
   pointer-events: none;
@@ -34,7 +34,7 @@
 }
 
 .explore-btn {
-  background-color: #df9a1e; /* Highlighted golden-orange color */
+  background-color: #df9a1e;
   color: white;
   border: none;
   padding: 14px 28px;
@@ -78,14 +78,111 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    height: 90vh;
+    /* Set a proportional mobile height so background images match standard mobile banners */
+    height: 75vh; 
+    width: 100vw;
   }
 
   .hero-slide {
-    padding: 0 5% 10% 5%;
+    /* Forces the background image to stretch across the full width and height without missing parts */
+    background-size: 100% 100%; 
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 5% 6% 5%;
+  }
+
+  .explore-btn {
+    padding: 10px 18px;
+    font-size: 12px;
   }
 
   .hero-dots {
     right: 5%;
+    bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 65vh; /* Adjust height proportionally to match image ratios */
+    width: 100vw;
+  }
+
+  .hero-slide {
+    background-size: cover; /* Keeps proportions intact, filling the screen smoothly */
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 5% 6% 5%;
+  }
+
+  .explore-btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .hero-dots {
+    right: 5%;
+    bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 65vh;
+    width: 100vw;
+  }
+
+  .hero-slide {
+    background-size: cover;
+    background-position: left center; /* Pins the background to the left so text remains visible */
+    width: 100%;
+    height: 100%;
+    padding: 0 5% 6% 5%;
+  }
+
+  .explore-btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .hero-dots {
+    right: 5%;
+    bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 70vh;
+    width: 100vw;
+  }
+
+  .hero-slide {
+    /* Use contain instead of cover so the entire image with its baked-in text stays visible */
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0d0d0d; /* Fills empty side gutters elegantly */
+    width: 100%;
+    height: 100%;
+    padding: 0 5% 6% 5%;
+    
+    /* Ensure hidden slides don't bleed through */
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .explore-btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .hero-dots {
+    right: 5%;
+    bottom: 20px;
   }
 }

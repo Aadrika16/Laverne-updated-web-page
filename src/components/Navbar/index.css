@@ -90,8 +90,38 @@
   border-radius: 50%;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
-  .nav-links {
+  .hamburger {
+    display: block;
+  }
+
+  /* Hides search, heart, shopping bag, and user icons on mobile view */
+  .nav-icons .icon:not(.hamburger .icon), 
+  .nav-icons .icon-badge-wrapper {
     display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background-color: rgba(15, 15, 15, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.4s ease-in-out;
+    z-index: 99;
+  }
+
+  .nav-links.active {
+    right: 0;
   }
 }

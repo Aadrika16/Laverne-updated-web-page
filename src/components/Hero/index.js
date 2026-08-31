@@ -2,34 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 
 const slides = [
-  {
-    image: "/carousalimages/library-0003.png",
-    alt: "Tree House"
-  },
-  {
-    image: "/carousalimages/23.png",
-    alt: "Indoor Activity Loft"
-  },
-  {
-    image: "/carousalimages/almara.png",
-    alt: "Indoor Activity Loft"
-  },
-  {
-    image: "/carousalimages/2.4.png",
-    alt: "Outdoor Activity Loft"
-  },
-  {
-    image: "/carousalimages/22.png",
-    alt: "Furniture Living Room"
-  },
-  {
-    image: "/carousalimages/555.png",
-    alt: "Furniture Dining Room"
-  },
-  {
-    image: "/carousalimages/lastCarousal1.png",
-    alt: "Outdoor Activity Loft"
-  }
+  { image: "/carousalimages/library-0003.png", alt: "Tree House" },
+  { image: "/carousalimages/23.png", alt: "Indoor Activity Loft" },
+  { image: "/carousalimages/almara.png", alt: "Indoor Activity Loft" },
+  { image: "/carousalimages/2.4.png", alt: "Outdoor Activity Loft" },
+  { image: "/carousalimages/22.png", alt: "Furniture Living Room" },
+  { image: "/carousalimages/555.png", alt: "Furniture Dining Room" },
+  { image: "/carousalimages/lastCarousal1.png", alt: "Outdoor Activity Loft" }
 ];
 
 const Hero = () => {
@@ -37,7 +16,6 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
-  // Auto-slide effect every 5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -45,10 +23,8 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // Trigger scroll-reveal effect when hero section enters viewport
   useEffect(() => {
     const currentSection = sectionRef.current;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -57,15 +33,9 @@ const Hero = () => {
       },
       { threshold: 0.1 }
     );
-
-    if (currentSection) {
-      observer.observe(currentSection);
-    }
-
+    if (currentSection) observer.observe(currentSection);
     return () => {
-      if (currentSection) {
-        observer.unobserve(currentSection);
-      }
+      if (currentSection) observer.unobserve(currentSection);
     };
   }, []);
 
@@ -80,7 +50,6 @@ const Hero = () => {
           className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
           style={{ backgroundImage: `url(${slide.image})` }}
         >
-          {/* Button positioned at the bottom left */}
           <div className="hero-action-container">
             <button className="explore-btn">
               Explore Collections <span>&rarr;</span>
