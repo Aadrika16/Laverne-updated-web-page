@@ -3,39 +3,32 @@ import './index.css';
 
 const slides = [
   {
-    subtitle: "HANDCRAFTED LIVING",
-    title: "Timeless Woodcraft for Modern Living.",
-    description: "Handcrafted furniture born from sustainable forests.",
-    image: "/carousalimages/TreeHouse.png",
+    image: "/carousalimages/library-0003.png",
     alt: "Tree House"
   },
   {
-    subtitle: "INDOOR PLAY & WONDER",
-    title: "Indoor Activity Loft Adventures.",
-    description: "Designed for endless indoor exploration and play.",
-    image: "/carousalimages/IndoorActivityloft.png",
+    image: "/carousalimages/23.png",
     alt: "Indoor Activity Loft"
   },
   {
-    subtitle: "OUTDOOR DISCOVERY",
-    title: "Outdoor Activity Loft & Play Spaces.",
-    description: "Blending nature with active outdoor structures.",
-    image: "/carousalimages/OutdoorActivityloft.png",
+    image: "/carousalimages/almara.png",
+    alt: "Indoor Activity Loft"
+  },
+  {
+    image: "/carousalimages/2.4.png",
     alt: "Outdoor Activity Loft"
   },
   {
-    subtitle: "ELEGANT INTERIORS",
-    title: "Exquisite Living Room Furniture.",
-    description: "Crafted comfort to elevate your everyday spaces.",
-    image: "/carousalimages/Furniture.png",
+    image: "/carousalimages/22.png",
     alt: "Furniture Living Room"
   },
   {
-    subtitle: "ARTISANAL DINING",
-    title: "Handmade Dining Room Sets.",
-    description: "Gather around pieces built with enduring quality.",
-    image: "/carousalimages/Furniture1.png",
+    image: "/carousalimages/555.png",
     alt: "Furniture Dining Room"
+  },
+  {
+    image: "/carousalimages/lastCarousal1.png",
+    alt: "Outdoor Activity Loft"
   }
 ];
 
@@ -48,7 +41,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 2000);
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
@@ -85,12 +78,10 @@ const Hero = () => {
         <div
           key={index}
           className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
-          style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${slide.image})` }}
+          style={{ backgroundImage: `url(${slide.image})` }}
         >
-          <div className="hero-content">
-            <span className="hero-subtitle">{slide.subtitle}</span>
-            <h1>{slide.title}</h1>
-            <p>{slide.description}</p>
+          {/* Button positioned at the bottom left */}
+          <div className="hero-action-container">
             <button className="explore-btn">
               Explore Collections <span>&rarr;</span>
             </button>

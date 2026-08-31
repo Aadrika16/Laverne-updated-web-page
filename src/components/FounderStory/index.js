@@ -59,7 +59,7 @@ const FounderStory = () => {
           <div className="founder-image-column">
             <div className="founder-image-wrapper">
               <img 
-                src="/carousalimages/ChatGPT Image Aug 20, 2026, 12_02_46 PM.png"
+                src="/carousalimages/ChatGPT Image Aug 20, 2026, 06_49_22 PM.png"
                 alt="Laverne Studio Interior Setup" 
               />
             </div>

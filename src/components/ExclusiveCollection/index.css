@@ -15,13 +15,14 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .exc-col {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: flex-start;
 }
 
 .exclusive-title-block {
@@ -53,6 +54,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   background-color: #eae5dc;
   transition: transform 0.4s ease;
+  display: flex;
 }
 
 .exc-img-card:hover {
@@ -66,37 +68,70 @@
   display: block;
 }
 
-/* Unique Asymmetrical Heights */
-.img-tall {
-  height: 380px;
-}
+/* Balanced Fixed Heights for Clean Desktop Alignment */
+.exc-col-1 .img-tall { height: 420px; }
+.exc-col-2 .img-small { height: 180px; }
+.exc-col-2 .img-medium { height: 260px; }
+.exc-col-2 .img-small-bottom { height: 180px; }
+.exc-col-3 .img-medium-top { height: 240px; }
+.exc-col-3 .img-tall-bottom { height: 380px; }
+.exc-col-4 .img-medium-top { height: 280px; }
+.exc-col-4 .img-medium-bottom { height: 340px; }
 
-.img-medium {
-  height: 260px;
-}
-
-.img-small {
-  height: 180px;
-}
-
-.img-tiny {
-  height: 140px;
-  flex: 1;
-}
-
-.exc-img-row {
-  display: flex;
-  gap: 15px;
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+  .exc-col-1 .img-tall { height: 360px; }
+  .exc-col-2 .img-small { height: 150px; }
+  .exc-col-2 .img-medium { height: 220px; }
+  .exc-col-2 .img-small-bottom { height: 150px; }
+  .exc-col-3 .img-medium-top { height: 200px; }
+  .exc-col-3 .img-tall-bottom { height: 330px; }
+  .exc-col-4 .img-medium-top { height: 240px; }
+  .exc-col-4 .img-medium-bottom { height: 290px; }
 }
 
 @media (max-width: 1024px) {
   .exclusive-grid-layout {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .exc-col-1 .img-tall,
+  .exc-col-2 .img-small,
+  .exc-col-2 .img-medium,
+  .exc-col-2 .img-small-bottom,
+  .exc-col-3 .img-medium-top,
+  .exc-col-3 .img-tall-bottom,
+  .exc-col-4 .img-medium-top,
+  .exc-col-4 .img-medium-bottom {
+    height: 280px;
+  }
 }
 
 @media (max-width: 768px) {
   .exclusive-grid-layout {
     grid-template-columns: 1fr;
+  }
+
+  .exclusive-section {
+    padding: 60px 5%;
+  }
+
+  .exc-main-title {
+    font-size: 30px;
+  }
+
+  .exc-year {
+    font-size: 26px;
+  }
+
+  .exc-col-1 .img-tall,
+  .exc-col-2 .img-small,
+  .exc-col-2 .img-medium,
+  .exc-col-2 .img-small-bottom,
+  .exc-col-3 .img-medium-top,
+  .exc-col-3 .img-tall-bottom,
+  .exc-col-4 .img-medium-top,
+  .exc-col-4 .img-medium-bottom {
+    height: 240px;
   }
 }

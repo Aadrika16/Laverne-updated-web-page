@@ -8,13 +8,13 @@ const categoriesData = [
     title: "Beds",
     image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=800",
     items: [
-      { id: 1, title: "1. Modern Wooden", image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=800" },
-      { id: 2, title: "2. Modern Upholstered", image: "https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&q=80&w=800" },
-      { id: 3, title: "3. Modern Classic", image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800" },
-      { id: 4, title: "4. Classic Carved", image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800" },
-      { id: 5, title: "5. Classic Wooden", image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=800" },
-      { id: 6, title: "6. Bunk Beds", image: "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&q=80&w=800" },
-      { id: 7, title: "7. Custom Beds", image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" }
+      { id: 1, title: "1. Modern Wooden", image: "/beds/bed1.png" },
+      { id: 2, title: "2. Modern Upholstered", image: "/beds/bed2.png" },
+      { id: 3, title: "3. Modern Classic", image: "/beds/bed3.png" },
+      { id: 4, title: "4. Classic Carved", image: "/beds/bed10.png" },
+      { id: 5, title: "5. Classic Wooden", image: "/beds/bed8.png" },
+      { id: 6, title: "6. Bunk Beds", image: "/beds/bed6.png" },
+      { id: 7, title: "7. Custom Beds", image: "/beds/bed9.png" }
     ]
   },
   {

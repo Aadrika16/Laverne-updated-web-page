@@ -2,16 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 
 const exclusiveImages = [
-  { id: 1, url: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800", alt: "Modern Sofa Set" },
-  { id: 2, url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=800", alt: "Luxury Bedroom" },
-  { id: 3, url: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800", alt: "Interior Decor" },
-  { id: 4, url: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800", alt: "Designer Armchair" },
-  { id: 5, url: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=800", alt: "Contemporary Living" },
-  { id: 6, url: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=800", alt: "Dining Collection" },
-  { id: 7, url: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800", alt: "Minimalist Coffee Table" },
-  { id: 8, url: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800", alt: "Cabinet & Console" },
-  { id: 9, url: "https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&q=80&w=800", alt: "Lounge Seating" },
-  { id: 10, url: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800", alt: "Bespoke Interior" }
+  { id: 1, url: "/exclusiveCollection/E1.png", alt: "Modern Sofa Set" },
+  { id: 2, url: "/exclusiveCollection/E2.png", alt: "Luxury Bedroom" },
+  { id: 3, url: "/exclusiveCollection/E3.png", alt: "Interior Decor" },
+  { id: 4, url: "/exclusiveCollection/E4.png", alt: "Designer Armchair" },
+  { id: 5, url: "/exclusiveCollection/E9.png", alt: "Contemporary Living" },
+  { id: 6, url: "/exclusiveCollection/E6.png", alt: "Dining Collection" },
+  { id: 7, url: "/exclusiveCollection/E7.png", alt: "Minimalist Coffee Table" },
+  { id: 8, url: "/exclusiveCollection/E8.png", alt: "Cabinet & Console" }
 ];
 
 const ExclusiveCollection = () => {
@@ -66,36 +64,28 @@ const ExclusiveCollection = () => {
           <div className="exc-img-card img-medium">
             <img src={exclusiveImages[2].url} alt={exclusiveImages[2].alt} />
           </div>
-          <div className="exc-img-card img-small">
+          <div className="exc-img-card img-small-bottom">
             <img src={exclusiveImages[3].url} alt={exclusiveImages[3].alt} />
           </div>
         </div>
 
-        {/* Column 3: Image 5, 6, 7 */}
+        {/* Column 3: Image 5, 6 */}
         <div className="exc-col exc-col-3">
-          <div className="exc-img-card img-medium">
+          <div className="exc-img-card img-medium-top">
             <img src={exclusiveImages[4].url} alt={exclusiveImages[4].alt} />
           </div>
-          <div className="exc-img-card img-tall">
+          <div className="exc-img-card img-tall-bottom">
             <img src={exclusiveImages[5].url} alt={exclusiveImages[5].alt} />
           </div>
         </div>
 
-        {/* Column 4: Image 8, 9, 10 */}
+        {/* Column 4: Image 7, 8 */}
         <div className="exc-col exc-col-4">
-          <div className="exc-img-card img-small">
+          <div className="exc-img-card img-medium-top">
             <img src={exclusiveImages[6].url} alt={exclusiveImages[6].alt} />
           </div>
-          <div className="exc-img-card img-medium">
+          <div className="exc-img-card img-medium-bottom">
             <img src={exclusiveImages[7].url} alt={exclusiveImages[7].alt} />
-          </div>
-          <div className="exc-img-row">
-            <div className="exc-img-card img-tiny">
-              <img src={exclusiveImages[8].url} alt={exclusiveImages[8].alt} />
-            </div>
-            <div className="exc-img-card img-tiny">
-              <img src={exclusiveImages[9].url} alt={exclusiveImages[9].alt} />
-            </div>
           </div>
         </div>
       </div>

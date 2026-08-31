@@ -18,7 +18,6 @@ const Home = () => {
       <CuratedCategories />
       <FounderStory />
       <ExclusiveCollection />
-      
       <Instagram />
       <Footer />
     </div>

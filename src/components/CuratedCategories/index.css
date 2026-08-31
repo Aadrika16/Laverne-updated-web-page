@@ -1,6 +1,7 @@
 /* Initial Hidden State for Scroll Reveal Effect */
 .curated-categories-section {
-  padding: 80px 5%;
+  padding: 10px 5%;
+  margin-top:-80px;
   background-color: #f7f4ee;
   text-align: center;
   opacity: 0;
