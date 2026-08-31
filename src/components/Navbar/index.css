@@ -125,3 +125,43 @@
     right: 0;
   }
 }
+.nav-logo img {
+  height: 120px; /* Increased from 75px for a larger desktop logo */
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
+}
+@media (max-width: 768px) {
+  .nav-logo img {
+    height: 70px; /* Keeps the mobile logo neatly sized */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Hides search, heart, shopping bag, and user icons on mobile view */
+  .nav-icons .icon:not(.hamburger .icon), 
+  .nav-icons .icon-badge-wrapper {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background-color: rgba(15, 15, 15, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.4s ease-in-out;
+    z-index: 99;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+}
