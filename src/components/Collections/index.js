@@ -40,7 +40,7 @@ const signatureItems = [
     title: 'Outdoor Activity loft',
     subtitle: 'OUR SIGNATURE COLLECTION',
     description: 'Designed for adventure, built for memories.',
-    image: '/outdoor/Outdoor-03.png',
+    image: '/outdoor/outdoor-03.png',
     items: [
       { id: 1, title: '1. Outdoor Discovery Structure', image: '/outdoor/outdoor-01.png' },
       { id: 2, title: '2. Creative Play Space', image: '/outdoor/outdoor-02.png' },

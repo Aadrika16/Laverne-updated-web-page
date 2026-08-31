@@ -33,7 +33,9 @@ const Hero = () => {
       },
       { threshold: 0.1 }
     );
+
     if (currentSection) observer.observe(currentSection);
+
     return () => {
       if (currentSection) observer.unobserve(currentSection);
     };
@@ -48,8 +50,9 @@ const Hero = () => {
         <div
           key={index}
           className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
-          style={{ backgroundImage: `url(${slide.image})` }}
         >
+          <img src={slide.image} alt={slide.alt} className="hero-img" />
+          
           <div className="hero-action-container">
             <button className="explore-btn">
               Explore Collections <span>&rarr;</span>
