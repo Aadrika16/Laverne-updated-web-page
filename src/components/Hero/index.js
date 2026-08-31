@@ -2,13 +2,47 @@ import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 
 const slides = [
-  { image: "/carousalimages/library-0003.png", alt: "Tree House" },
-  { image: "/carousalimages/23.png", alt: "Indoor Activity Loft" },
-  { image: "/carousalimages/almara.png", alt: "Indoor Activity Loft" },
-  { image: "/carousalimages/2.4.png", alt: "Outdoor Activity Loft" },
-  { image: "/carousalimages/22.png", alt: "Furniture Living Room" },
-  { image: "/carousalimages/555.png", alt: "Furniture Dining Room" },
-  { image: "/carousalimages/lastCarousal1.png", alt: "Outdoor Activity Loft" }
+ {
+  image: "/carousalimages/library2.0.png",
+  alt: "Library and Living Room",
+  title: "Spaces That Inspire",
+  subtitle: "Thoughtfully designed interiors where storage, comfort, and timeless character come together."
+},
+
+{
+  image: "/carousalimages/ship.png",
+  alt: "Pirate Ship Playroom",
+  title: "Adventures Indoors",
+  subtitle: "Imaginative themed environments that transform everyday play into unforgettable experiences."
+},
+
+{
+  image: "/carousalimages/playhouse.png",
+  alt: "Outdoor Activity Gym",
+  title: "Built For Movement",
+  subtitle: "Contemporary outdoor activity structures designed for climbing, swinging, balancing, and exploration."
+},
+
+{
+  image: "/carousalimages/indoorplayhouse.png",
+  alt: "Indoor Activity Loft",
+  title: "Little Worlds Within",
+  subtitle: "Warm, beautifully crafted indoor play spaces created for imagination, discovery, and everyday play."
+},
+
+{
+  image: "/carousalimages/outdoorplayhouse.png",
+  alt: "Outdoor Wooden Playhouse",
+  title: "Play Beyond The Walls",
+  subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."
+},
+
+{
+  image: "/carousalimages/treeplayhouse.png",
+  alt: "Treehouse with Blue Slide",
+  title: "Elevated Adventures",
+  subtitle: "Architectural treehouses with slides, climbing features, and elevated spaces made for endless discovery."
+}
 ];
 
 const Hero = () => {
@@ -53,10 +87,17 @@ const Hero = () => {
         >
           <img src={slide.image} alt={slide.alt} className="hero-img" />
           
-          <div className="hero-action-container">
-            <button className="explore-btn">
-              Explore Collections <span>&rarr;</span>
-            </button>
+          <div className="hero-content-wrapper">
+            <div className="hero-text-container">
+              <span className="hero-subtitle">{slide.subtitle}</span>
+              <h1 className="hero-title">{slide.title}</h1>
+            </div>
+            
+            <div className="hero-action-container">
+              <button className="explore-btn">
+                Explore Collections <span>&rarr;</span>
+              </button>
+            </div>
           </div>
         </div>
       ))}

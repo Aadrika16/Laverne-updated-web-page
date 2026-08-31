@@ -9,8 +9,11 @@ const signatureItems = [
     description: 'Nature inspired retreats that reconnect you.',
     image: '/carousalimages/TreeHouse3.png',
     items: [
-      { id: 1, title: '1. Custom Tree House Exterior', image: '/carousalimages/3.png' },
-      { id: 2, title: '2. Playhouse View', image: '/carousalimages/TreeHouse2.png' }
+      { id: 1, title: '1. Custom Tree House Exterior', image: '/playyhouse/play1.png' },
+      { id: 2, title: '2. Playhouse View', image: '/playyhouse/play2.png' },
+      { id: 3, title: '3. Tree House with Slide', image: '/playyhouse/play3.png' },
+      { id: 4, title: '4. Tree House with Rope Ladder', image: '/playyhouse/play4.png' },
+      { id: 5, title: '5. Tree House with Swing', image: '/playyhouse/play5.png' },
     ]
   },
   {

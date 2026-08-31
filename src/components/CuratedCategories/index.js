@@ -22,13 +22,12 @@ const categoriesData = [
     title: "Sofas & Seating",
     image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800",
     items: [
-      { id: 1, title: "1. Modern Upholstered", image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800" },
-      { id: 2, title: "2. Modern Wooden", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800" },
-      { id: 3, title: "3. Modern Classic", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=800" },
-      { id: 4, title: "4. Classic Upholstered", image: "https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&q=80&w=800" },
-      { id: 5, title: "5. Classic Carved", image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800" },
-      { id: 6, title: "6. Sectional Sofas", image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800" },
-      { id: 7, title: "7. Custom Seating", image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" }
+      { id: 2, title: "2. Modern Wooden", image: "/sofas/s1.png" },
+      { id: 3, title: "3. Modern Classic", image: "/sofas/s2.png" },
+      { id: 4, title: "4. Classic Upholstered", image: "/dining/d3.png" },
+      { id: 5, title: "5. Classic Carved", image: "/sofas/s3.png" },
+      { id: 6, title: "6. Sectional Sofas", image: "/sofas/s4.png" },
+      { id: 7, title: "7. Custom Seating", image: "/sofas/s5.png" }
     ]
   },
   {
@@ -36,12 +35,11 @@ const categoriesData = [
     title: "Dining",
     image: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=800",
     items: [
-      { id: 1, title: "1. Modern Dining", image: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=800" },
-      { id: 2, title: "2. Modern Classic", image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800" },
-      { id: 3, title: "3. Classic Dining", image: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=800" },
+      { id: 1, title: "1. Modern Dining", image: "/dining/d1.png" },
+      { id: 2, title: "2. Modern Classic", image: "/dining/d2.png" },
+      { id: 3, title: "3. Classic Dining", image: "/dining/d3.png" },
       { id: 4, title: "4. Dining Tables", image: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=800" },
-      { id: 5, title: "5. Dining Chairs", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800" },
-      { id: 6, title: "6. Custom Dining Sets", image: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=800" }
+      { id: 5, title: "5. Dining Chairs", image: "/dining/d4.png" },
     ]
   },
   {
@@ -50,11 +48,9 @@ const categoriesData = [
     image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800",
     items: [
       { id: 1, title: "1. Modern", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800" },
-      { id: 2, title: "2. Modern Classic", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800" },
-      { id: 3, title: "3. Classic", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800" },
-      { id: 4, title: "4. Carved", image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800" },
-      { id: 5, title: "5. Upholstered", image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800" },
-      { id: 6, title: "6. Accent Chairs", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800" }
+      { id: 2, title: "2. Modern Classic", image: "/armchairs/a1.png" },
+      { id: 3, title: "3. Classic", image: "/armchairs/a2.png" },
+      { id: 6, title: "6. Accent Chairs", image: "/armchairs/a3.png" }
     ]
   },
   {
