@@ -206,3 +206,125 @@
     bottom: 20px;
   }
 }
+/* Consolidated Mobile Responsive View */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 6% 12% 6%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed from 'cover' to 'contain' to show the full image */
+    object-position: center center;
+    background-color: #000; /* Optional: adds a sleek black background for any empty vertical gaps */
+  }
+
+  .hero-content-wrapper {
+    gap: 12px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero-text-container {
+    align-items: flex-start;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 11px;
+    letter-spacing: 0.3px;
+  }
+
+  .explore-btn {
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+
+  .hero-dots {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+  }
+}
+/* Consolidated Mobile Responsive View */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Adjusted padding to push the content lower down */
+    padding: 25% 6% 10% 6%; 
+    /* Keeps content aligned to the left */
+    justify-content: flex-start;
+    /* Moves the content block further down vertically */
+    align-items: flex-end; 
+  }
+
+  .hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .hero-content-wrapper {
+    gap: 12px;
+    align-items: flex-start;
+    text-align: left;
+    /* Adds a slight bottom or transform push if needed */
+    margin-bottom: 20px; 
+  }
+
+  .hero-text-container {
+    align-items: flex-start;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 11px;
+    letter-spacing: 0.3px;
+  }
+
+  .explore-btn {
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+
+  .hero-dots {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+  }
+}
