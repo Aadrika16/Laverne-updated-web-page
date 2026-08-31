@@ -6,8 +6,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-logo">
-        <h2>LAVERNE</h2>
-        <span>STUDIO</span>
+        <a href="#home">
+          <img src="/laverneLogo/laverne_logo_transparent.png" alt="Laverne Studio by Weedy JewelZz" />
+        </a>
       </div>
       <ul className="nav-links">
         <li><a href="#home" className="active">HOME</a></li>
