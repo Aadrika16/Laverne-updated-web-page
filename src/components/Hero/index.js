@@ -37,13 +37,7 @@ const slides = [
     title: "Play Beyond The Walls",
     subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."
   },
-  {
-    desktopImage: "/carousalimages/treeplayhouse.png",
-    mobileImage: "/mobileviewcarousals/m6.png",
-    alt: "Treehouse with Blue Slide",
-    title: "Elevated Adventures",
-    subtitle: "Architectural treehouses with slides, climbing features, and elevated spaces made for endless discovery."
-  }
+  
 ];
 
 const Hero = () => {
