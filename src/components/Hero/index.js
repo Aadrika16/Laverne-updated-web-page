@@ -2,47 +2,48 @@ import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
 
 const slides = [
- {
-  image: "/carousalimages/library2.0.png",
-  alt: "Library and Living Room",
-  title: "Spaces That Inspire",
-  subtitle: "Thoughtfully designed interiors where storage, comfort, and timeless character come together."
-},
-
-{
-  image: "/carousalimages/ship.png",
-  alt: "Pirate Ship Playroom",
-  title: "Adventures Indoors",
-  subtitle: "Imaginative themed environments that transform everyday play into unforgettable experiences."
-},
-
-{
-  image: "/carousalimages/playhouse.png",
-  alt: "Outdoor Activity Gym",
-  title: "Built For Movement",
-  subtitle: "Contemporary outdoor activity structures designed for climbing, swinging, balancing, and exploration."
-},
-
-{
-  image: "/carousalimages/indoorplayhouse.png",
-  alt: "Indoor Activity Loft",
-  title: "Little Worlds Within",
-  subtitle: "Warm, beautifully crafted indoor play spaces created for imagination, discovery, and everyday play."
-},
-
-{
-  image: "/carousalimages/daytimetreehouse1.png",
-  alt: "Daytime Treehouse",
-  title: "Play Beyond The Walls",
-  subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."
-},
-
-{
-  image: "/carousalimages/treeplayhouse.png",
-  alt: "Treehouse with Blue Slide",
-  title: "Elevated Adventures",
-  subtitle: "Architectural treehouses with slides, climbing features, and elevated spaces made for endless discovery."
-}
+  {
+    desktopImage: "/carousalimages/library2.0.png",
+    mobileImage: "/mobileviewcarousals/m1.png", // Update filenames as needed
+    alt: "Library and Living Room",
+    title: "Spaces That Inspire",
+    subtitle: "Thoughtfully designed interiors where storage, comfort, and timeless character come together."
+  },
+  {
+    desktopImage: "/carousalimages/ship.png",
+    mobileImage: "/mobileviewcarousals/m2.png",
+    alt: "Pirate Ship Playroom",
+    title: "Adventures Indoors",
+    subtitle: "Imaginative themed environments that transform everyday play into unforgettable experiences."
+  },
+  {
+    desktopImage: "/carousalimages/playhouse.png",
+    mobileImage: "/mobileviewcarousals/m3.png",
+    alt: "Outdoor Activity Gym",
+    title: "Built For Movement",
+    subtitle: "Contemporary outdoor activity structures designed for climbing, swinging, balancing, and exploration."
+  },
+  {
+    desktopImage: "/carousalimages/indoorplayhouse.png",
+    mobileImage: "/mobileviewcarousals/m4.png",
+    alt: "Indoor Activity Loft",
+    title: "Little Worlds Within",
+    subtitle: "Warm, beautifully crafted indoor play spaces created for imagination, discovery, and everyday play."
+  },
+  {
+    desktopImage: "/carousalimages/daytimetreehouse1.png",
+    mobileImage: "/mobileviewcarousals/m5.png",
+    alt: "Daytime Treehouse",
+    title: "Play Beyond The Walls",
+    subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."
+  },
+  {
+    desktopImage: "/carousalimages/treeplayhouse.png",
+    mobileImage: "/mobileviewcarousals/m6.png",
+    alt: "Treehouse with Blue Slide",
+    title: "Elevated Adventures",
+    subtitle: "Architectural treehouses with slides, climbing features, and elevated spaces made for endless discovery."
+  }
 ];
 
 const Hero = () => {
@@ -85,7 +86,11 @@ const Hero = () => {
           key={index}
           className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
         >
-          <img src={slide.image} alt={slide.alt} className="hero-img" />
+          {/* Picture element handles swapping between desktop and mobile sources automatically */}
+          <picture className="hero-img-container">
+            <source media="(max-width: 768px)" srcSet={slide.mobileImage} />
+            <img src={slide.desktopImage} alt={slide.alt} className="hero-img" />
+          </picture>
           
           <div className="hero-content-wrapper">
             <div className="hero-text-container">
