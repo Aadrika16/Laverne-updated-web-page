@@ -31,8 +31,8 @@ const slides = [
 },
 
 {
-  image: "/carousalimages/outdoorplayhouse.png",
-  alt: "Outdoor Wooden Playhouse",
+  image: "/carousalimages/daytimetreehouse1.png",
+  alt: "Daytime Treehouse",
   title: "Play Beyond The Walls",
   subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."
 },
@@ -90,7 +90,7 @@ const Hero = () => {
           <div className="hero-content-wrapper">
             <div className="hero-text-container">
               <span className="hero-subtitle">{slide.subtitle}</span>
-              <h1 className="hero-title">{slide.title}</h1>
+              <h3 className="hero-title">{slide.title}</h3>
             </div>
             
             <div className="hero-action-container">
