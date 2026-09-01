@@ -10,8 +10,8 @@ const slides = [
     subtitle: "Thoughtfully designed interiors where storage, comfort, and timeless character come together."
   },
   {
-    desktopImage: "/carousalimages/ship.png",
-    mobileImage: "/mobileviewcarousals/m2.png",
+    desktopImage: "/carousalimages/ship1.png",
+    mobileImage: "/mobileviewcarousals/m7.png",
     alt: "Pirate Ship Playroom",
     title: "Adventures Indoors",
     subtitle: "Imaginative themed environments that transform everyday play into unforgettable experiences."
