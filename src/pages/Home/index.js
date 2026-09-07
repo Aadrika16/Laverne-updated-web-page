@@ -13,12 +13,31 @@ const Home = () => {
   return (
     <div className="home-container">
       <Navbar />
-      <Hero />
-      <Collections />
-      <CuratedCategories />
-      <FounderStory />
-      <ExclusiveCollection />
-      <Instagram />
+
+      <section id="home">
+        <Hero />
+      </section>
+
+      <section id="collections">
+        <Collections />
+      </section>
+
+      <section id="categories">
+        <CuratedCategories />
+      </section>
+
+      <section id="our-story">
+        <FounderStory />
+      </section>
+
+      <section id="exclusive">
+        <ExclusiveCollection />
+      </section>
+
+      <section id="instagram">
+        <Instagram />
+      </section>
+
       <Footer />
     </div>
   );

@@ -37,6 +37,20 @@ const slides = [
     title: "Play Beyond The Walls",
     subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."
   },
+  {
+    desktopImage: "/carousalimages/sofa2.png",
+    mobileImage: "/mobileviewcarousals/m9.png",
+    alt: "Sofa and Living Room",
+    title: "Spaces That Inspire",
+    subtitle: "Thoughtfully designed interiors where storage, comfort, and timeless character come together."
+  },
+  {
+    desktopImage: "/carousalimages/kidsbed.png",
+    mobileImage: "/mobileviewcarousals/m10.png",
+    alt: "Kids Bedroom",
+    title: "Dreamy Bedrooms",
+    subtitle: "Beautifully designed bedrooms that balance comfort, functionality, and timeless style."
+  }
   
 ];
 
