@@ -3,50 +3,50 @@ import './index.css';
 
 const slides = [
   {
-    desktopImage: "/carousalimages/library2.0.png",
-    mobileImage: "/mobileviewcarousals/m1.png", // Update filenames as needed
+    desktopImage: "/desktopview-carousals/library.webp",
+    mobileImage: "/mobileviewcarousals/m1.webp", // Update filenames as needed
     alt: "Library and Living Room",
     title: "Spaces That Inspire",
     subtitle: "Thoughtfully designed interiors where storage, comfort, and timeless character come together."
   },
   {
-    desktopImage: "/carousalimages/ship1.png",
-    mobileImage: "/mobileviewcarousals/m7.png",
+    desktopImage: "/desktopview-carousals/ship.webp",
+    mobileImage: "/mobileviewcarousals/m7.webp",
     alt: "Pirate Ship Playroom",
     title: "Adventures Indoors",
     subtitle: "Imaginative themed environments that transform everyday play into unforgettable experiences."
   },
   {
-    desktopImage: "/carousalimages/playhouse.png",
-    mobileImage: "/mobileviewcarousals/m3.png",
+    desktopImage: "/desktopview-carousals/playhouse.webp",
+    mobileImage: "/mobileviewcarousals/m3.webp",
     alt: "Outdoor Activity Gym",
     title: "Built For Movement",
     subtitle: "Contemporary outdoor activity structures designed for climbing, swinging, balancing, and exploration."
   },
   {
-    desktopImage: "/carousalimages/indoorplayhouse.png",
-    mobileImage: "/mobileviewcarousals/m4.png",
+    desktopImage: "/desktopview-carousals/indoorplayhouse.webp",
+    mobileImage: "/mobileviewcarousals/m4.webp",
     alt: "Indoor Activity Loft",
     title: "Little Worlds Within",
     subtitle: "Warm, beautifully crafted indoor play spaces created for imagination, discovery, and everyday play."
   },
   {
-    desktopImage: "/carousalimages/treehouse5.png",
-    mobileImage: "/mobileviewcarousals/m12.png",
+    desktopImage: "/desktopview-carousals/treehouse1.webp",
+    mobileImage: "/mobileviewcarousals/m12.webp",
     alt: "Daytime Treehouse",
     title: "Play Beyond The Walls",
     subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."
   },
   {
-    desktopImage: "/carousalimages/sofa2.png",
-    mobileImage: "/mobileviewcarousals/m9.png",
+    desktopImage: "/desktopview-carousals/sofa.webp",
+    mobileImage: "/mobileviewcarousals/m9.webp",
     alt: "Sofa and Living Room",
     title: "Spaces That Inspire",
     subtitle: "Thoughtfully designed interiors where storage, comfort, and timeless character come together."
   },
   {
-    desktopImage: "/carousalimages/kidsbed1.png",
-    mobileImage: "/mobileviewcarousals/m10.png",
+    desktopImage: "/desktopview-carousals/kidsbed.webp",
+    mobileImage: "/mobileviewcarousals/m10.webp",
     alt: "Kids Bedroom",
     title: "Dreamy Bedrooms",
     subtitle: "Beautifully designed bedrooms that balance comfort, functionality, and timeless style."
