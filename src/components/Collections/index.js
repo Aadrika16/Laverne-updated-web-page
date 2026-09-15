@@ -10,44 +10,44 @@ const signatureItems = [
     title: 'Tree House / Play House',
     subtitle: 'OUR SIGNATURE COLLECTION',
     description: 'Imaginative outdoor retreats crafted for endless childhood adventures.',
-    image: '/tree&playhouse/playhouse_6.webp',
+    image: '/tree&playhouse/p1.webp',
 
     items: [
       {
         id: 1,
         title: '1. Custom Tree House Exterior',
         description: 'Bespoke outdoor structures designed for imaginative play.',
-        image: '/tree&playhouse/playhouse_1.webp'
+        image: '/tree&playhouse/p2.webp'
       },
       {
         id: 2,
         title: '2. Playhouse View',
         description: 'A playful retreat made for little everyday adventures.',
-        image: '/tree&playhouse/playhouse_2.webp'
+        image: '/tree&playhouse/p1.webp'
       },
       {
         id: 3,
         title: '3. Tree House with Slide',
         description: 'Elevated play combined with an exciting slide experience.',
-        image: '/tree&playhouse/playhouse_3.webp'
+        image: '/tree&playhouse/p4.webp'
       },
       {
         id: 4,
         title: '4. Tree House with Rope Ladder',
         description: 'Adventure-inspired climbing designed to encourage active play.',
-        image: '/tree&playhouse/playhouse_4.webp'
+        image: '/tree&playhouse/p5.webp'
       },
       {
         id: 5,
         title: '5. Tree House with Swing',
         description: 'A charming play retreat with space to swing and explore.',
-        image: '/tree&playhouse/playhouse_5.webp'
+        image: '/tree&playhouse/p6.webp'
       },
       {
         id: 6,
         title: '6. Tree House with Slide',
         description: 'Elevated play combined with an exciting slide experience.',
-        image: '/tree&playhouse/playhouse_6.webp'
+        image: '/tree&playhouse/p3.webp'
       }
       
 
@@ -203,7 +203,7 @@ const signatureItems = [
         id: 4,
         title: '4. Elevated Play Structure',
         description: 'A raised play environment encouraging movement and exploration.',
-        image: '/tree&playhouse/playhouse_6.webp'
+        image: '/tree&playhouse/p1.webp'
       },
       {
         id: 5,
