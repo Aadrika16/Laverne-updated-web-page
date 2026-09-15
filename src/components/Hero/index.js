@@ -11,7 +11,7 @@ const slides = [
   },
   {
     desktopImage: "/desktopview-carousals/ship.webp",
-    mobileImage: "/mobileviewcarousals/m7.webp",
+    mobileImage: "/mobileviewcarousals/m2.webp",
     alt: "Pirate Ship Playroom",
     title: "Adventures Indoors",
     subtitle: "Imaginative themed environments that transform everyday play into unforgettable experiences."
@@ -32,21 +32,21 @@ const slides = [
   },
   {
     desktopImage: "/desktopview-carousals/treehouse1.webp",
-    mobileImage: "/mobileviewcarousals/m12.webp",
+    mobileImage: "/mobileviewcarousals/m5.webp",
     alt: "Daytime Treehouse",
     title: "Play Beyond The Walls",
     subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."
   },
   {
     desktopImage: "/desktopview-carousals/sofa.webp",
-    mobileImage: "/mobileviewcarousals/m9.webp",
+    mobileImage: "/mobileviewcarousals/m6.webp",
     alt: "Sofa and Living Room",
     title: "Spaces That Inspire",
     subtitle: "Thoughtfully designed interiors where storage, comfort, and timeless character come together."
   },
   {
     desktopImage: "/desktopview-carousals/kidsbed.webp",
-    mobileImage: "/mobileviewcarousals/m10.webp",
+    mobileImage: "/mobileviewcarousals/m7.webp",
     alt: "Kids Bedroom",
     title: "Dreamy Bedrooms",
     subtitle: "Beautifully designed bedrooms that balance comfort, functionality, and timeless style."
