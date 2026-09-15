@@ -31,8 +31,8 @@ const slides = [
     subtitle: "Warm, beautifully crafted indoor play spaces created for imagination, discovery, and everyday play."
   },
   {
-    desktopImage: "/carousalimages/daytimetreehouse2.png",
-    mobileImage: "/mobileviewcarousals/m8.png",
+    desktopImage: "/carousalimages/treehouse5.png",
+    mobileImage: "/mobileviewcarousals/m12.png",
     alt: "Daytime Treehouse",
     title: "Play Beyond The Walls",
     subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."
@@ -45,7 +45,7 @@ const slides = [
     subtitle: "Thoughtfully designed interiors where storage, comfort, and timeless character come together."
   },
   {
-    desktopImage: "/carousalimages/kidsbed.png",
+    desktopImage: "/carousalimages/kidsbed1.png",
     mobileImage: "/mobileviewcarousals/m10.png",
     alt: "Kids Bedroom",
     title: "Dreamy Bedrooms",
