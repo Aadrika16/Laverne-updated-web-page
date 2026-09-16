@@ -31,8 +31,8 @@ const slides = [
     subtitle: "Warm, beautifully crafted indoor play spaces created for imagination, discovery, and everyday play."
   },
   {
-    desktopImage: "/desktopview-carousals/treehouse1.webp",
-    mobileImage: "/mobileviewcarousals/m5.webp",
+    desktopImage: "/desktopview-carousals/treehouse01.webp",
+    mobileImage: "/mobileviewcarousals/m05.webp",
     alt: "Daytime Treehouse",
     title: "Play Beyond The Walls",
     subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."

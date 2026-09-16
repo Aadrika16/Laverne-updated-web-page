@@ -10,7 +10,7 @@ const signatureItems = [
     title: 'Tree House / Play House',
     subtitle: 'OUR SIGNATURE COLLECTION',
     description: 'Imaginative outdoor retreats crafted for endless childhood adventures.',
-    image: '/tree&playhouse/p1.webp',
+    image: '/desktopview-carousals/treehouse01.webp',
 
     items: [
       {
@@ -23,7 +23,7 @@ const signatureItems = [
         id: 2,
         title: '2. Playhouse View',
         description: 'A playful retreat made for little everyday adventures.',
-        image: '/tree&playhouse/p1.webp'
+        image: '/desktopview-carousals/treehouse01.webp'
       },
       {
         id: 3,
