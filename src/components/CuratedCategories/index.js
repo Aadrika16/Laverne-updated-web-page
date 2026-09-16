@@ -17,43 +17,43 @@ const categoriesData = [
         id: 1,
         title: "1. Modern Wooden",
         description: "Clean wooden forms crafted for warm contemporary bedrooms.",
-        image: "/beds/bed1.png"
+        image: "/beds/bed1.webp"
       },
       {
         id: 2,
         title: "2. Modern Upholstered",
         description: "Soft upholstered comfort with a refined modern silhouette.",
-        image: "/beds/bed2.png"
+        image: "/beds/bed2.webp"
       },
       {
         id: 3,
         title: "3. Modern Classic",
         description: "Timeless detailing balanced with contemporary proportions.",
-        image: "/beds/bed3.png"
+        image: "/beds/bed3.webp"
       },
       {
         id: 4,
         title: "4. Classic Carved",
         description: "Intricate craftsmanship inspired by traditional furniture design.",
-        image: "/beds/bed10.png"
+        image: "/beds/bed10.webp"
       },
       {
         id: 5,
         title: "5. Classic Wooden",
         description: "Natural wood craftsmanship with enduring classic appeal.",
-        image: "/beds/bed8.png"
+        image: "/beds/bed8.webp"
       },
       {
         id: 6,
         title: "6. Bunk Beds",
         description: "Smart space-saving beds designed for playful shared rooms.",
-        image: "/beds/bed6.png"
+        image: "/beds/bed6.webp"
       },
       {
         id: 7,
         title: "7. Custom Beds",
         description: "Personalized bed designs created around your space and style.",
-        image: "/beds/bed9.png"
+        image: "/beds/bed9.webp"
       }
     ]
   },
@@ -73,19 +73,19 @@ const categoriesData = [
         id: 2,
         title: "2. Modern Wooden",
         description: "Streamlined wooden seating with a warm contemporary character.",
-        image: "/sofas/s1.png"
+        image: "/sofas/s1.webp"
       },
       {
         id: 3,
         title: "3. Modern Classic",
         description: "Elegant seating blending classic detail with modern comfort.",
-        image: "/sofas/s2.png"
+        image: "/sofas/s2.webp"
       },
       {
         id: 5,
         title: "5. Classic Carved",
         description: "Gracefully carved seating crafted with timeless sophistication.",
-        image: "/sofas/s3.png"
+        image: "/sofas/s3.webp"
       }
     ]
   },

@@ -4,42 +4,42 @@ import "./index.css";
 const exclusiveImages = [
   {
     id: 1,
-    url: "/exclusiveCollection/E1.png",
+    url: "/exclusiveCollection/E1.webp",
     alt: "Modern Sofa Set",
   },
   {
     id: 2,
-    url: "/exclusiveCollection/E2.png",
+    url: "/exclusiveCollection/E2.webp",
     alt: "Luxury Bedroom",
   },
   {
     id: 3,
-    url: "/exclusiveCollection/E10.png",
+    url: "/exclusiveCollection/E10.webp",
     alt: "Interior Decor",
   },
   {
     id: 4,
-    url: "/exclusiveCollection/E4.png",
+    url: "/exclusiveCollection/E4.webp",
     alt: "Designer Armchair",
   },
   {
     id: 5,
-    url: "/exclusiveCollection/E9.png",
+    url: "/exclusiveCollection/E9.webp",
     alt: "Contemporary Living",
   },
   {
     id: 6,
-    url: "/exclusiveCollection/E6.png",
+    url: "/exclusiveCollection/E6.webp",
     alt: "Dining Collection",
   },
   {
     id: 7,
-    url: "/exclusiveCollection/E7.png",
+    url: "/exclusiveCollection/E7.webp",
     alt: "Minimalist Coffee Table",
   },
   {
     id: 8,
-    url: "/exclusiveCollection/E8.png",
+    url: "/exclusiveCollection/E8.webp",
     alt: "Cabinet & Console",
   },
 ];

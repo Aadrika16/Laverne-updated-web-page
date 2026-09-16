@@ -62,110 +62,110 @@ const signatureItems = [
     title: 'Indoor Activity Loft',
     subtitle: 'OUR SIGNATURE COLLECTION',
     description: 'Playful indoor environments designed to inspire movement and imagination.',
-    image: '/indoor/indoor22.png',
+    image: '/indoor/indoor22.webp',
 
     items: [
       {
         id: 1,
         title: '1. Playhouse & Climbing Loft',
         description: 'A playful loft combining climbing, discovery and imagination.',
-        image: '/indoor/indoor-006.png'
+        image: '/indoor/indoor-006.webp'
       },
       {
         id: 2,
         title: '2. Little Explorer Loft',
         description: 'A cozy elevated space made for curious little explorers.',
-        image: '/indoor/indoor-008.png'
+        image: '/indoor/indoor-008.webp'
       },
       {
         id: 3,
         title: '3. Interactive Climbing Hub',
         description: 'An engaging activity zone created for active indoor play.',
-        image: '/indoor/indoor-009.png'
+        image: '/indoor/indoor-009.webp'
       },
       {
         id: 4,
         title: '4. Multi-Level Play Loft',
         description: 'Layered play spaces designed for adventure at every level.',
-        image: '/indoor/indoor-011.png'
+        image: '/indoor/indoor-011.webp'
       },
       {
         id: 5,
         title: '5. Signature Indoor Playhouse',
         description: 'A beautifully crafted hideaway for creative everyday play.',
-        image: '/indoor/indoor-013.png'
+        image: '/indoor/indoor-013.webp'
       },
       {
         id: 6,
         title: '6. Adventure Loft Playground',
         description: 'A dynamic indoor playground built around movement and discovery.',
-        image: '/indoor/indoor-001.png'
+        image: '/indoor/indoor-001.webp'
       },
       {
         id: 7,
         title: '7. Climb & Explore Zone',
         description: 'A compact adventure space for climbing and exploration.',
-        image: '/indoor/indoor-002.png'
+        image: '/indoor/indoor-002.webp'
       },
       {
         id: 8,
         title: '8. Elevated Playhouse Retreat',
         description: 'A raised retreat creating a world of its own.',
-        image: '/indoor/indoor-003.png'
+        image: '/indoor/indoor-003.webp'
       },
       {
         id: 9,
         title: '9. Indoor Activity Loft',
         description: 'A multifunctional loft designed for energetic indoor play.',
-        image: '/indoor/indoor-004.png'
+        image: '/indoor/indoor-004.webp'
       },
       {
         id: 10,
         title: '10. Climbing Wall Adventure',
         description: 'A playful climbing feature that builds confidence and movement.',
-        image: '/indoor/indoor-005.png'
+        image: '/indoor/indoor-005.webp'
       },
       {
         id: 11,
         title: '11. Slide & Rope Adventure',
         description: 'Slides and ropes come together for endless active fun.',
-        image: '/indoor/indoor-007.png'
+        image: '/indoor/indoor-007.webp'
       },
       {
         id: 12,
         title: '12. Indoor Adventure Gym',
         description: 'A creative activity gym designed for movement and exploration.',
-        image: '/indoor/indoor-010.png'
+        image: '/indoor/indoor-010.webp'
       },
       {
         id: 13,
         title: '13. Custom Tree House Exterior',
         description: 'A handcrafted structure bringing outdoor adventure indoors.',
-        image: '/playyhouse/play1.png'
+        image: '/playyhouse/play1.webp'
       },
       {
         id: 14,
         title: '14. Playhouse View',
         description: 'A charming play space made for imaginative moments.',
-        image: '/playyhouse/play2.png'
+        image: '/playyhouse/play2.webp'
       },
       {
         id: 15,
         title: '15. Tree House with Slide',
         description: 'A playful structure combining climbing and sliding adventures.',
-        image: '/playyhouse/play3.png'
+        image: '/playyhouse/play3.webp'
       },
       {
         id: 16,
         title: '16. Tree House with Rope Ladder',
         description: 'A climbing-focused design made for active young adventurers.',
-        image: '/playyhouse/play4.png'
+        image: '/playyhouse/play4.webp'
       },
       {
         id: 17,
         title: '17. Tree House with Swing',
         description: 'A playful retreat designed for swinging and exploring.',
-        image: '/playyhouse/play5.png'
+        image: '/playyhouse/play5.webp'
       }
     ]
   },

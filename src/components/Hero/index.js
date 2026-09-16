@@ -65,6 +65,12 @@ const Hero = () => {
     }, 5000);
     return () => clearInterval(timer);
   }, []);
+  const handleExploreClick = () => {
+    const collectionsSection = document.getElementById('collections');
+    if (collectionsSection) {
+      collectionsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     const currentSection = sectionRef.current;
@@ -107,7 +113,7 @@ const Hero = () => {
             </div>
             
             <div className="hero-action-container">
-              <button className="explore-btn">
+              <button className="explore-btn" onClick={handleExploreClick}>
                 Explore Collections <span>&rarr;</span>
               </button>
             </div>
