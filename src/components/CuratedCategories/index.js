@@ -53,7 +53,7 @@ const categoriesData = [
         id: 7,
         title: "7. Custom Beds",
         description: "Personalized bed designs created around your space and style.",
-        image: "/beds/bed9.webp"
+        image: "/beds/bed09.webp"
       }
     ]
   },
