@@ -37,7 +37,7 @@ const Home = () => {
       <section id="instagram">
         <Instagram />
       </section>
-
+      
       <Footer />
     </div>
   );

@@ -37,29 +37,36 @@ const FounderStory = () => {
         
         <div className="founder-content-grid">
           <div className="founder-text-column">
-            <p>
-              At Laverne Studio, we believe beautiful interiors begin with intention. 
-              We blend timeless design with thoughtful details to create pieces that 
-              bring warmth, balance and character into your home.
-            </p>
-            <p>
-              From natural materials to custom finishes, every element is chosen 
-              with care. Our collections are designed to mix, match and evolve 
-              with your space and your story.
-            </p>
-            <p className="founder-highlight-text">
-              <strong>Imagine it. Personalise it. Live with it.</strong>
-            </p>
-            <p>
-              Let’s create something uniquely yours.<br />
-              Explore Laverne Studio today.
-            </p>
-          </div>
 
+            <h2>Bespoke Spaces, Crafted From Your Imagination</h2>
+
+            <p>
+              At Laverne Studio, we specialise in creating bespoke tree houses,
+              playhouses and activity lofts for children and adults, designed for
+              backyards, lawns, villas, farmhouses and schools.
+            </p>
+
+            <p>
+              From a reference image you love to a space designed around your exact
+              requirements, we bring your vision to life through custom craftsmanship,
+              carefully selected materials and precise detailing.
+            </p>
+
+            <p>
+              We are particularly known for crafting custom replicas and inspired
+              recreations of selected furniture, structures and spaces—reimagined to
+              suit your dimensions, environment and functional needs.
+            </p>
+
+            <p className="founder-highlight-text">
+              <strong>You imagine it. We craft it.</strong>
+            </p>
+
+          </div>
           <div className="founder-image-column">
             <div className="founder-image-wrapper">
               <img 
-                src="/founder_img/founder_of_laverne.webp"
+                src="/founder_img/IMG_14131.PNG"
                 alt="Laverne Studio Interior Setup" 
               />
             </div>

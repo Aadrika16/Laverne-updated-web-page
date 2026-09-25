@@ -32,7 +32,7 @@ const slides = [
   },
   {
     desktopImage: "/desktopview-carousals/treehouse01.webp",
-    mobileImage: "/mobileviewcarousals/m05.webp",
+    mobileImage: "/mobileviewcarousals/Treehousefinal.png",
     alt: "Daytime Treehouse",
     title: "Play Beyond The Walls",
     subtitle: "Bespoke outdoor play structures that turn gardens into places of adventure, creativity, and connection."

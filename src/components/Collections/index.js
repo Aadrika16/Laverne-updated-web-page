@@ -10,7 +10,7 @@ const signatureItems = [
     title: 'Tree House / Play House',
     subtitle: 'OUR SIGNATURE COLLECTION',
     description: 'Imaginative outdoor retreats crafted for endless childhood adventures.',
-    image: '/desktopview-carousals/treehouse01.webp',
+    image: '/mobileviewcarousals/Treehousefinal.png',
 
     items: [
       {
@@ -23,7 +23,7 @@ const signatureItems = [
         id: 2,
         title: '2. Playhouse View',
         description: 'A playful retreat made for little everyday adventures.',
-        image: '/desktopview-carousals/treehouse01.webp'
+        image: '/mobileviewcarousals/Treehousefinal.png'
       },
       {
         id: 3,
@@ -141,31 +141,31 @@ const signatureItems = [
         id: 13,
         title: '13. Custom Tree House Exterior',
         description: 'A handcrafted structure bringing outdoor adventure indoors.',
-        image: '/playyhouse/play1.webp'
+        image: '/playyhouse/play1.png'
       },
       {
         id: 14,
         title: '14. Playhouse View',
         description: 'A charming play space made for imaginative moments.',
-        image: '/playyhouse/play2.webp'
+        image: '/playyhouse/play2.png'
       },
       {
         id: 15,
         title: '15. Tree House with Slide',
         description: 'A playful structure combining climbing and sliding adventures.',
-        image: '/playyhouse/play3.webp'
+        image: '/playyhouse/play3.png'
       },
       {
         id: 16,
         title: '16. Tree House with Rope Ladder',
         description: 'A climbing-focused design made for active young adventurers.',
-        image: '/playyhouse/play4.webp'
+        image: '/playyhouse/play4.png'
       },
       {
         id: 17,
         title: '17. Tree House with Swing',
         description: 'A playful retreat designed for swinging and exploring.',
-        image: '/playyhouse/play5.webp'
+        image: '/playyhouse/play5.png'
       }
     ]
   },
@@ -203,7 +203,7 @@ const signatureItems = [
         id: 4,
         title: '4. Elevated Play Structure',
         description: 'A raised play environment encouraging movement and exploration.',
-        image: '/tree&playhouse/p1.webp'
+        image: '/mobileviewcarousals/Treehousefinal.png'
       },
       {
         id: 5,
