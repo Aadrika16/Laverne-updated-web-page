@@ -66,7 +66,7 @@ const FounderStory = () => {
           <div className="founder-image-column">
             <div className="founder-image-wrapper">
               <img 
-                src="/founder_img/IMG_14131.PNG"
+                src="/founder_img/IMG_14131.png"
                 alt="Laverne Studio Interior Setup" 
               />
             </div>
