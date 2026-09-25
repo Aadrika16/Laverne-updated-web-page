@@ -45,6 +45,10 @@
   object-position: center center;
 }
 
+.hero-img-contain {
+  object-fit: contain;
+}
+
 /* Subtle dark overlay gradient for better text readability */
 .hero-slide::after {
   content: '';

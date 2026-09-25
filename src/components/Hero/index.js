@@ -103,7 +103,11 @@ const Hero = () => {
           {/* Picture element handles swapping between desktop and mobile sources automatically */}
           <picture className="hero-img-container">
             <source media="(max-width: 768px)" srcSet={slide.mobileImage} />
-            <img src={slide.desktopImage} alt={slide.alt} className="hero-img" />
+            <img
+              src={slide.desktopImage}
+              alt={slide.alt}
+              className={`hero-img ${slide.desktopImage.includes('Treehousefinal') ? 'hero-img-contain' : ''}`}
+            />
           </picture>
           
           <div className="hero-content-wrapper">
