@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
 import {
-  FiSearch,
-  FiHeart,
-  FiShoppingBag,
-  FiUser,
   FiMenu,
   FiX
 } from 'react-icons/fi';
@@ -18,18 +14,20 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      {/* Logo */}
+
+      {/* LEFT - LOGO */}
       <div className="nav-logo">
         <a href="#home" onClick={handleNavClick}>
           <img
             src="/laverneLogo/laverne_logo_transparent.png"
-            alt="Laverne Studio by Weedy JewelZz"
+            alt="Laverne Studio"
           />
         </a>
       </div>
 
-      {/* Navigation Links */}
+      {/* CENTER - NAVIGATION LINKS */}
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
+
         <li>
           <a href="#home" onClick={handleNavClick}>
             HOME
@@ -60,41 +58,46 @@ const Navbar = () => {
           </a>
         </li>
 
-        <li>
-          <a href="#instagram" onClick={handleNavClick}>
+        {/* Mobile Instagram */}
+        <li className="mobile-instagram">
+          <a
+            href="#instagram"
+            onClick={handleNavClick}
+          >
             INSTAGRAM
           </a>
         </li>
+
       </ul>
 
-      {/* Icons */}
-      <div className="nav-icons">
-        <FiSearch className="icon" />
+      {/* RIGHT - INSTAGRAM BUTTON */}
+      <div className="nav-right">
+        <a
+          href="#instagram"
+          className="instagram-btn"
+          onClick={handleNavClick}
+        >
+          INSTAGRAM
+        </a>
 
-        <div className="icon-badge-wrapper">
-          <FiHeart className="icon" />
-          <span className="badge">2</span>
-        </div>
-
-        <div className="icon-badge-wrapper">
-          <FiShoppingBag className="icon" />
-          <span className="badge">0</span>
-        </div>
-
-        <FiUser className="icon" />
-
-        {/* Mobile Menu */}
-        <div
+        {/* MOBILE HAMBURGER */}
+        <button
+          type="button"
           className="hamburger"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() =>
+            setMenuOpen((prev) => !prev)
+          }
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
         >
           {menuOpen ? (
-            <FiX className="icon" />
+            <FiX />
           ) : (
-            <FiMenu className="icon" />
+            <FiMenu />
           )}
-        </div>
+        </button>
       </div>
+
     </nav>
   );
 };

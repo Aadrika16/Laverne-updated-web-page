@@ -1,8 +1,29 @@
 /* src/pages/Home/index.css */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .home-container {
   width: 100%;
   background-color: #f7f4ee;
   color: #2b2b2b;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+}
+
+/* Navbar is absolute, so we do NOT need scroll offset */
+#home,
+#collections,
+#categories,
+#our-story,
+#exclusive,
+#instagram {
+  scroll-margin-top: 0;
 }

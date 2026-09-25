@@ -1,6 +1,7 @@
 /* Founder Story Section Styles */
 .founder-story-section {
   padding: 100px 6%;
+  padding-top:20px;
   background-color: #f7f4ee;
   border-bottom: 1px solid #e6dec5;
   opacity: 0;

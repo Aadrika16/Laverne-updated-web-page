@@ -1,6 +1,7 @@
 /* Instagram Section Layout - Max Width */
 .instagram-section {
   padding: 80px 1px;
+  padding-top: 40px;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;

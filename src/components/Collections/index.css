@@ -17,7 +17,8 @@
 .collections-section {
   width: 100%;
 
-  padding: 80px 8%;
+  padding: 50px 8%;
+  padding-top:20px;
 
   overflow: hidden;
 
@@ -389,7 +390,7 @@
   overflow: hidden;
 
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+ 
 }
 
 
@@ -670,6 +671,9 @@
     transform: none;
   }
 
+  .signature-img-wrapper.contain-image {
+  height: 400px;
+}
 
   /* =======================================================
      MOBILE IMAGE

@@ -5,12 +5,14 @@
 .exclusive-section {
   width: 100%;
   box-sizing: border-box;
+   border-bottom: 1px solid #e6dec5;
 
   padding: 70px 3%;
 
   background-color: #f7f4ee;
 
   overflow: hidden;
+  padding-top:30px;
 
   opacity: 0;
   transform: translateY(35px);

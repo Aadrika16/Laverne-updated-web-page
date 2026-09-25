@@ -17,11 +17,12 @@
 .curated-categories-section {
   width: 100%;
 
-  padding: 10px 5% 70px;
+  padding: 30px 5% 70px;
 
   margin-top: -80px;
 
   overflow: hidden;
+   border-bottom: 1px solid #e6dec5;
 
   background-color: #f7f4ee;
 
@@ -483,7 +484,7 @@
 
   -webkit-box-orient: vertical;
 
-  -webkit-line-clamp: 2;
+  
 }
 
 

@@ -9,48 +9,57 @@ const signatureItems = [
     id: 'tree-house',
     title: 'Tree House / Play House',
     subtitle: 'OUR SIGNATURE COLLECTION',
-    description: 'Imaginative outdoor retreats crafted for endless childhood adventures.',
+    description:
+      'Imaginative outdoor retreats crafted for endless childhood adventures.',
     image: '/mobileviewcarousals/Treehousefinal.png',
+
+    // Show full Tree House image without cropping
+    imageFit: 'contain',
 
     items: [
       {
         id: 1,
         title: '1. Custom Tree House Exterior',
-        description: 'Bespoke outdoor structures designed for imaginative play.',
+        description:
+          'Bespoke outdoor structures designed for imaginative play.',
         image: '/tree&playhouse/p2.webp'
       },
       {
         id: 2,
         title: '2. Playhouse View',
-        description: 'A playful retreat made for little everyday adventures.',
-        image: '/mobileviewcarousals/Treehousefinal.png'
+        description:
+          'A playful retreat made for little everyday adventures.',
+        image: '/mobileviewcarousals/Treehousefinal.png',
+        imageFit: 'contain'
       },
       {
         id: 3,
         title: '3. Tree House with Slide',
-        description: 'Elevated play combined with an exciting slide experience.',
+        description:
+          'Elevated play combined with an exciting slide experience.',
         image: '/tree&playhouse/p4.webp'
       },
       {
         id: 4,
         title: '4. Tree House with Rope Ladder',
-        description: 'Adventure-inspired climbing designed to encourage active play.',
+        description:
+          'Adventure-inspired climbing designed to encourage active play.',
         image: '/tree&playhouse/p5.webp'
       },
       {
         id: 5,
         title: '5. Tree House with Swing',
-        description: 'A charming play retreat with space to swing and explore.',
+        description:
+          'A charming play retreat with space to swing and explore.',
         image: '/tree&playhouse/p6.webp'
       },
       {
         id: 6,
         title: '6. Tree House with Slide',
-        description: 'Elevated play combined with an exciting slide experience.',
+        description:
+          'Elevated play combined with an exciting slide experience.',
         image: '/tree&playhouse/p3.webp'
       }
-      
-
     ]
   },
 
@@ -61,110 +70,128 @@ const signatureItems = [
     id: 'indoor-loft',
     title: 'Indoor Activity Loft',
     subtitle: 'OUR SIGNATURE COLLECTION',
-    description: 'Playful indoor environments designed to inspire movement and imagination.',
+    description:
+      'Playful indoor environments designed to inspire movement and imagination.',
     image: '/indoor/indoor22.webp',
 
     items: [
       {
         id: 1,
         title: '1. Playhouse & Climbing Loft',
-        description: 'A playful loft combining climbing, discovery and imagination.',
+        description:
+          'A playful loft combining climbing, discovery and imagination.',
         image: '/indoor/indoor-006.webp'
       },
       {
         id: 2,
         title: '2. Little Explorer Loft',
-        description: 'A cozy elevated space made for curious little explorers.',
+        description:
+          'A cozy elevated space made for curious little explorers.',
         image: '/indoor/indoor-008.webp'
       },
       {
         id: 3,
         title: '3. Interactive Climbing Hub',
-        description: 'An engaging activity zone created for active indoor play.',
+        description:
+          'An engaging activity zone created for active indoor play.',
         image: '/indoor/indoor-009.webp'
       },
       {
         id: 4,
         title: '4. Multi-Level Play Loft',
-        description: 'Layered play spaces designed for adventure at every level.',
+        description:
+          'Layered play spaces designed for adventure at every level.',
         image: '/indoor/indoor-011.webp'
       },
       {
         id: 5,
         title: '5. Signature Indoor Playhouse',
-        description: 'A beautifully crafted hideaway for creative everyday play.',
+        description:
+          'A beautifully crafted hideaway for creative everyday play.',
         image: '/indoor/indoor-013.webp'
       },
       {
         id: 6,
         title: '6. Adventure Loft Playground',
-        description: 'A dynamic indoor playground built around movement and discovery.',
+        description:
+          'A dynamic indoor playground built around movement and discovery.',
         image: '/indoor/indoor-001.webp'
       },
       {
         id: 7,
         title: '7. Climb & Explore Zone',
-        description: 'A compact adventure space for climbing and exploration.',
+        description:
+          'A compact adventure space for climbing and exploration.',
         image: '/indoor/indoor-002.webp'
       },
       {
         id: 8,
         title: '8. Elevated Playhouse Retreat',
-        description: 'A raised retreat creating a world of its own.',
+        description:
+          'A raised retreat creating a world of its own.',
         image: '/indoor/indoor-003.webp'
       },
       {
         id: 9,
         title: '9. Indoor Activity Loft',
-        description: 'A multifunctional loft designed for energetic indoor play.',
+        description:
+          'A multifunctional loft designed for energetic indoor play.',
         image: '/indoor/indoor-004.webp'
       },
       {
         id: 10,
         title: '10. Climbing Wall Adventure',
-        description: 'A playful climbing feature that builds confidence and movement.',
+        description:
+          'A playful climbing feature that builds confidence and movement.',
         image: '/indoor/indoor-005.webp'
       },
       {
         id: 11,
         title: '11. Slide & Rope Adventure',
-        description: 'Slides and ropes come together for endless active fun.',
+        description:
+          'Slides and ropes come together for endless active fun.',
         image: '/indoor/indoor-007.webp'
       },
       {
         id: 12,
         title: '12. Indoor Adventure Gym',
-        description: 'A creative activity gym designed for movement and exploration.',
+        description:
+          'A creative activity gym designed for movement and exploration.',
         image: '/indoor/indoor-010.webp'
       },
       {
         id: 13,
         title: '13. Custom Tree House Exterior',
-        description: 'A handcrafted structure bringing outdoor adventure indoors.',
+        description:
+          'A handcrafted structure bringing outdoor adventure indoors.',
         image: '/playyhouse/play1.png'
       },
       {
         id: 14,
         title: '14. Playhouse View',
-        description: 'A charming play space made for imaginative moments.',
+        description:
+          'A charming play space made for imaginative moments.',
         image: '/playyhouse/play2.png'
       },
       {
         id: 15,
         title: '15. Tree House with Slide',
-        description: 'A playful structure combining climbing and sliding adventures.',
+        description:
+          'A playful structure combining climbing and sliding adventures.',
         image: '/playyhouse/play3.png'
       },
       {
         id: 16,
         title: '16. Tree House with Rope Ladder',
-        description: 'A climbing-focused design made for active young adventurers.',
+        description:
+          'A climbing-focused design made for active young adventurers.',
         image: '/playyhouse/play4.png'
       },
       {
         id: 17,
         title: '17. Tree House with Swing',
-        description: 'A playful retreat designed for swinging and exploring.',
+        description:
+          'A playful retreat designed for swinging and exploring.',
         image: '/playyhouse/play5.png'
       }
     ]
@@ -177,104 +204,122 @@ const signatureItems = [
     id: 'outdoor-loft',
     title: 'Outdoor Activity Loft',
     subtitle: 'OUR SIGNATURE COLLECTION',
-    description: 'Purposeful outdoor play structures created for movement and discovery.',
+    description:
+      'Purposeful outdoor play structures created for movement and discovery.',
     image: '/outdoor/outdoor-03.png',
 
     items: [
       {
         id: 1,
         title: '1. Outdoor Discovery Structure',
-        description: 'A creative outdoor structure built for exploration and play.',
+        description:
+          'A creative outdoor structure built for exploration and play.',
         image: '/outdoor/outdoor-01.png'
       },
       {
         id: 2,
         title: '2. Creative Play Space',
-        description: 'An imaginative environment designed for open-ended outdoor play.',
+        description:
+          'An imaginative environment designed for open-ended outdoor play.',
         image: '/outdoor/outdoor-02.png'
       },
       {
         id: 3,
         title: '3. Outdoor Adventure Loft',
-        description: 'An elevated outdoor escape created for active adventures.',
+        description:
+          'An elevated outdoor escape created for active adventures.',
         image: '/outdoor/outdoor-03.png'
       },
       {
         id: 4,
         title: '4. Elevated Play Structure',
-        description: 'A raised play environment encouraging movement and exploration.',
-        image: '/mobileviewcarousals/Treehousefinal.png'
+        description:
+          'A raised play environment encouraging movement and exploration.',
+        image: '/mobileviewcarousals/Treehousefinal.png',
+        imageFit: 'contain'
       },
       {
         id: 5,
         title: '5. Outdoor Climbing Zone',
-        description: 'A dedicated climbing space designed for energetic outdoor play.',
+        description:
+          'A dedicated climbing space designed for energetic outdoor play.',
         image: '/outdoor/outdoor-05.png'
       },
       {
         id: 6,
         title: '6. Adventure Play Tower',
-        description: 'A statement play tower built for climbing and discovery.',
+        description:
+          'A statement play tower built for climbing and discovery.',
         image: '/outdoor/outdoor-06.png'
       },
       {
         id: 7,
         title: '7. Outdoor Explorer Hub',
-        description: 'A playful destination designed for curious young explorers.',
+        description:
+          'A playful destination designed for curious young explorers.',
         image: '/outdoor/outdoor-07.png'
       },
       {
         id: 8,
         title: '8. Nature-Inspired Play Area',
-        description: 'A playful environment thoughtfully connected with the outdoors.',
+        description:
+          'A playful environment thoughtfully connected with the outdoors.',
         image: '/outdoor/outdoor-08.png'
       },
       {
         id: 9,
         title: '9. Outdoor Activity Zone',
-        description: 'An active play zone designed for movement and creativity.',
+        description:
+          'An active play zone designed for movement and creativity.',
         image: '/outdoor/outdoor-09.png'
       },
       {
         id: 10,
         title: '10. Kids Adventure Playground',
-        description: 'A joyful playground designed for energetic everyday adventures.',
+        description:
+          'A joyful playground designed for energetic everyday adventures.',
         image: '/outdoor/outdoor-10.png'
       },
       {
         id: 11,
         title: '11. Outdoor Imagination Space',
-        description: 'A flexible outdoor setting where imagination leads the play.',
+        description:
+          'A flexible outdoor setting where imagination leads the play.',
         image: '/outdoor/outdoor-11.png'
       },
       {
         id: 12,
         title: '12. Multi-Level Play Area',
-        description: 'Multiple levels create more ways to climb and explore.',
+        description:
+          'Multiple levels create more ways to climb and explore.',
         image: '/outdoor/outdoor-12.png'
       },
       {
         id: 13,
         title: '13. Outdoor Exploration Zone',
-        description: 'A discovery-led space encouraging active outdoor experiences.',
+        description:
+          'A discovery-led space encouraging active outdoor experiences.',
         image: '/outdoor/outdoor-13.png'
       },
       {
         id: 14,
         title: '14. Adventure Play Pavilion',
-        description: 'A beautifully crafted pavilion designed around adventurous play.',
+        description:
+          'A beautifully crafted pavilion designed around adventurous play.',
         image: '/outdoor/outdoor-14.png'
       },
       {
         id: 15,
         title: '15. Outdoor Discovery Hub',
-        description: 'A playful outdoor hub created for exploration and connection.',
+        description:
+          'A playful outdoor hub created for exploration and connection.',
         image: '/outdoor/outdoor-15.png'
       },
       {
         id: 16,
         title: '16. Active Play Playground',
-        description: 'An energetic playground encouraging movement, balance and confidence.',
+        description:
+          'An energetic playground encouraging movement, balance and confidence.',
         image: '/outdoor/outdoor-16.png'
       }
     ]
@@ -287,56 +332,64 @@ const signatureItems = [
     id: 'kids-interior',
     title: 'Kids Interior',
     subtitle: 'OUR SIGNATURE COLLECTION',
-    description: 'Thoughtful interiors designed around comfort, creativity and childhood.',
+    description:
+      'Thoughtful interiors designed around comfort, creativity and childhood.',
     image: '/carousalimages/KidsInterior.png',
 
     items: [
       {
         id: 1,
         title: '1. Whimsical Kids Room',
-        description: 'A playful room designed to make imagination feel limitless.',
+        description:
+          'A playful room designed to make imagination feel limitless.',
         image:
           '/kids-interior-space-images/kids_room_01_enhanced_zoomout.webp'
       },
       {
         id: 2,
         title: '2. Creative Playful Space',
-        description: 'A vibrant interior balancing creativity, comfort and functionality.',
+        description:
+          'A vibrant interior balancing creativity, comfort and functionality.',
         image:
           '/kids-interior-space-images/kids_room_02_enhanced_zoomout.webp'
       },
       {
         id: 3,
         title: '3. Playful Room Design',
-        description: 'A joyful room where thoughtful design meets everyday play.',
+        description:
+          'A joyful room where thoughtful design meets everyday play.',
         image:
           '/kids-interior-space-images/kids_room_01_enhanced_zoomout.webp'
       },
       {
         id: 4,
         title: '4. Creative Kids Room',
-        description: 'A personalized space created for learning, play and rest.',
+        description:
+          'A personalized space created for learning, play and rest.',
         image:
           '/kids-interior-space-images/kids_room_02_enhanced_zoomout.webp'
       },
       {
         id: 5,
         title: '5. Imaginative Play Area',
-        description: 'A playful interior encouraging creativity and independent exploration.',
+        description:
+          'A playful interior encouraging creativity and independent exploration.',
         image:
           '/kids-interior-space-images/kids_room_03_enhanced_zoomout.webp'
       },
       {
         id: 6,
         title: '6. Whimsical Kids Room',
-        description: 'Soft details and playful forms create a magical retreat.',
+        description:
+          'Soft details and playful forms create a magical retreat.',
         image:
           '/kids-interior-space-images/kids_room_04_enhanced_zoomout.webp'
       },
       {
         id: 7,
         title: '7. Cozy Kids Room',
-        description: 'A warm and functional room designed for growing children.',
+        description:
+          'A warm and functional room designed for growing children.',
         image:
           '/kids-interior-space-images/kids_room_06_enhanced_zoomout.webp'
       }
@@ -350,56 +403,65 @@ const signatureItems = [
     id: 'custom-made',
     title: 'Custom Made',
     subtitle: 'OUR SIGNATURE COLLECTION',
-    description: 'Bespoke furniture and interiors tailored uniquely to your space.',
+    description:
+      'Bespoke furniture and interiors tailored uniquely to your space.',
     image: '/carousalimages/CustomMade.png',
 
     items: [
       {
         id: 1,
         title: '1. Custom Furniture Design',
-        description: 'Furniture thoughtfully created around your space and lifestyle.',
+        description:
+          'Furniture thoughtfully created around your space and lifestyle.',
         image: '/custom-made/custom_made_01.webp'
       },
       {
         id: 2,
         title: '2. Personalized Home Decor',
-        description: 'Personalized details that bring warmth and individuality home.',
+        description:
+          'Personalized details that bring warmth and individuality home.',
         image: '/custom-made/custom_made_02.webp'
       },
       {
         id: 3,
         title: '3. Tailored Interior Solutions',
-        description: 'Smart interiors designed to make every corner work beautifully.',
+        description:
+          'Smart interiors designed to make every corner work beautifully.',
         image: '/custom-made/custom_made_03.webp'
       },
       {
         id: 4,
         title: '4. Unique Custom Designs',
-        description: 'Distinctive spaces crafted around your individual requirements.',
+        description:
+          'Distinctive spaces crafted around your individual requirements.',
         image: '/custom-made/custom_made_04.webp'
       },
       {
         id: 5,
         title: '5. Bespoke Home Furnishings',
-        description: 'Refined storage and dressing solutions tailored to your style.',
+        description:
+          'Refined storage and dressing solutions tailored to your style.',
         image: '/custom-made/custom_made_05.webp'
       },
       {
         id: 6,
         title: '6. Classic Upholstered',
-        description: 'Timeless upholstered pieces created for comfort and elegance.',
+        description:
+          'Timeless upholstered pieces created for comfort and elegance.',
         image: '/dining/d3.png'
       },
       {
         id: 7,
         title: '7. Sectional Sofas',
-        description: 'Flexible modular seating made for contemporary everyday living.',
+        description:
+          'Flexible modular seating made for contemporary everyday living.',
         image: '/sofas/s4.png'
       },
       {
         id: 8,
         title: '8. Custom Seating',
-        description: 'Bespoke seating crafted for comfort, proportion and style.',
+        description:
+          'Bespoke seating crafted for comfort, proportion and style.',
         image: '/sofas/s5.png'
       }
     ]
@@ -616,7 +678,6 @@ const Collections = () => {
 
       {!selectedCategory ? (
         <div className="main-categories-view">
-
           <div className="signature-grid-wrapper">
 
             {mainTotalPages > 1 && (
@@ -651,7 +712,13 @@ const Collections = () => {
                       }
                     }}
                   >
-                    <div className="signature-img-wrapper">
+                    <div
+                      className={`signature-img-wrapper ${
+                        category.imageFit === 'contain'
+                          ? 'contain-image'
+                          : ''
+                      }`}
+                    >
                       <img
                         src={category.image}
                         alt={category.title}
@@ -661,7 +728,6 @@ const Collections = () => {
                     </div>
 
                     <div className="signature-content">
-
                       <div className="signature-icon-circle">
                         <span className="icon-symbol">
                           ✦
@@ -679,7 +745,6 @@ const Collections = () => {
                       <span className="explore-subtext">
                         Explore Subsections →
                       </span>
-
                     </div>
                   </article>
                 )
@@ -697,8 +762,6 @@ const Collections = () => {
               </button>
             )}
           </div>
-
-          {/* MAIN DOTS */}
 
           {mainTotalPages > 1 && (
             <div className="signature-dots">
@@ -723,7 +786,6 @@ const Collections = () => {
               ))}
             </div>
           )}
-
         </div>
       ) : (
         /* =====================================================
@@ -731,7 +793,6 @@ const Collections = () => {
         ===================================================== */
 
         <div className="category-block active-subview">
-
           <div className="signature-grid-wrapper">
 
             {isScrollable && (
@@ -757,19 +818,22 @@ const Collections = () => {
                   className="signature-card"
                   key={`${selectedCategory.id}-${item.id}`}
                 >
-                  <div className="signature-img-wrapper">
-
+                  <div
+                    className={`signature-img-wrapper ${
+                      item.imageFit === 'contain'
+                        ? 'contain-image'
+                        : ''
+                    }`}
+                  >
                     <img
                       src={item.image}
                       alt={item.title}
                       loading="lazy"
                       decoding="async"
                     />
-
                   </div>
 
                   <div className="signature-content">
-
                     <div className="signature-icon-circle">
                       <span className="icon-symbol">
                         ✦
@@ -783,7 +847,6 @@ const Collections = () => {
                     <p className="item-description">
                       {item.description}
                     </p>
-
                   </div>
                 </article>
               ))}
@@ -799,14 +862,10 @@ const Collections = () => {
                 →
               </button>
             )}
-
           </div>
-
-          {/* SUB CATEGORY DOTS */}
 
           {totalPages > 1 && (
             <div className="signature-dots">
-
               {Array.from({
                 length: totalPages
               }).map((_, index) => (
@@ -826,10 +885,8 @@ const Collections = () => {
                   }`}
                 />
               ))}
-
             </div>
           )}
-
         </div>
       )}
     </section>
