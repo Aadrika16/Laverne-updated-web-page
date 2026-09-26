@@ -106,7 +106,12 @@ const Hero = () => {
             <img
               src={slide.desktopImage}
               alt={slide.alt}
-              className={`hero-img ${slide.desktopImage.includes('Treehousefinal') ? 'hero-img-contain' : ''}`}
+              className="hero-img"
+              loading={index === currentSlide ? 'eager' : 'lazy'}
+              decoding="async"
+              fetchPriority={index === currentSlide ? 'high' : 'auto'}
+              width="1600"
+              height="900"
             />
           </picture>
           
