@@ -13,9 +13,6 @@ const signatureItems = [
       'Imaginative outdoor retreats crafted for endless childhood adventures.',
     image: '/mobileviewcarousals/Treehousefinal.png',
 
-    // Show full Tree House image without cropping
-    imageFit: 'contain',
-
     items: [
       {
         id: 1,
@@ -29,8 +26,7 @@ const signatureItems = [
         title: '2. Playhouse View',
         description:
           'A playful retreat made for little everyday adventures.',
-        image: '/mobileviewcarousals/Treehousefinal.png',
-        imageFit: 'contain'
+        image: '/mobileviewcarousals/Treehousefinal.png'
       },
       {
         id: 3,
@@ -235,8 +231,7 @@ const signatureItems = [
         title: '4. Elevated Play Structure',
         description:
           'A raised play environment encouraging movement and exploration.',
-        image: '/mobileviewcarousals/Treehousefinal.png',
-        imageFit: 'contain'
+        image: '/mobileviewcarousals/Treehousefinal.png'
       },
       {
         id: 5,
@@ -480,10 +475,6 @@ const Collections = () => {
 
   const sectionRef = useRef(null);
 
-  /* =========================================================
-     SCROLL REVEAL
-  ========================================================= */
-
   useEffect(() => {
     const currentSection = sectionRef.current;
 
@@ -538,9 +529,7 @@ const Collections = () => {
 
   const totalPages =
     activeSubItems.length > 0
-      ? Math.ceil(
-          activeSubItems.length / itemsPerPage
-        )
+      ? Math.ceil(activeSubItems.length / itemsPerPage)
       : 0;
 
   const isScrollable =
@@ -556,7 +545,7 @@ const Collections = () => {
     );
 
   /* =========================================================
-     SUB CATEGORY CONTROLS
+     CONTROLS
   ========================================================= */
 
   const handleSubPrev = () => {
@@ -579,10 +568,6 @@ const Collections = () => {
     );
   };
 
-  /* =========================================================
-     MAIN CATEGORY CONTROLS
-  ========================================================= */
-
   const handleMainPrev = () => {
     setMainCardsPage((prev) =>
       prev === 0
@@ -599,18 +584,10 @@ const Collections = () => {
     );
   };
 
-  /* =========================================================
-     OPEN CATEGORY
-  ========================================================= */
-
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
     setActivePage(0);
   };
-
-  /* =========================================================
-     BACK TO MAIN COLLECTIONS
-  ========================================================= */
 
   const handleBackToCollections = () => {
     setSelectedCategory(null);
@@ -632,6 +609,7 @@ const Collections = () => {
       ===================================================== */}
 
       <div className="signature-header">
+
         <span className="section-subtitle">
           {selectedCategory
             ? selectedCategory.subtitle
@@ -670,6 +648,7 @@ const Collections = () => {
             ← Back to All Collections
           </button>
         )}
+
       </div>
 
       {/* =====================================================
@@ -678,6 +657,7 @@ const Collections = () => {
 
       {!selectedCategory ? (
         <div className="main-categories-view">
+
           <div className="signature-grid-wrapper">
 
             {mainTotalPages > 1 && (
@@ -692,63 +672,66 @@ const Collections = () => {
             )}
 
             <div className="signature-grid">
-              {visibleMainCards.map(
-                (category) => (
-                  <article
-                    className="signature-card main-cat-card"
-                    key={category.id}
-                    role="button"
-                    tabIndex={0}
-                    onClick={() =>
-                      handleCategoryClick(category)
+
+              {visibleMainCards.map((category) => (
+                <article
+                  className="signature-card main-cat-card"
+                  key={category.id}
+                  role="button"
+                  tabIndex={0}
+
+                  onClick={() =>
+                    handleCategoryClick(category)
+                  }
+
+                  onKeyDown={(event) => {
+                    if (
+                      event.key === 'Enter' ||
+                      event.key === ' '
+                    ) {
+                      event.preventDefault();
+
+                      handleCategoryClick(category);
                     }
-                    onKeyDown={(event) => {
-                      if (
-                        event.key === 'Enter' ||
-                        event.key === ' '
-                      ) {
-                        event.preventDefault();
-                        handleCategoryClick(category);
-                      }
-                    }}
-                  >
-                    <div
-                      className={`signature-img-wrapper ${
-                        category.imageFit === 'contain'
-                          ? 'contain-image'
-                          : ''
-                      }`}
-                    >
-                      <img
-                        src={category.image}
-                        alt={category.title}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
+                  }}
+                >
 
-                    <div className="signature-content">
-                      <div className="signature-icon-circle">
-                        <span className="icon-symbol">
-                          ✦
-                        </span>
-                      </div>
+                  {/* SAME IMAGE WRAPPER FOR EVERY CARD */}
 
-                      <h3>
-                        {category.title}
-                      </h3>
+                  <div className="signature-img-wrapper">
+                    <img
+                      src={category.image}
+                      alt={category.title}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
 
-                      <p className="category-card-description">
-                        {category.description}
-                      </p>
+                  <div className="signature-content">
 
-                      <span className="explore-subtext">
-                        Explore Subsections →
+                    <div className="signature-icon-circle">
+                      <span className="icon-symbol">
+                        ✦
                       </span>
                     </div>
-                  </article>
-                )
-              )}
+
+                    <h3>
+                      {category.title}
+                    </h3>
+
+                    <p className="category-card-description">
+                      {category.description}
+                    </p>
+
+                    <span className="explore-subtext">
+                      Explore Subsections →
+                    </span>
+
+                  </div>
+
+                </article>
+              ))}
+
             </div>
 
             {mainTotalPages > 1 && (
@@ -761,38 +744,50 @@ const Collections = () => {
                 →
               </button>
             )}
+
           </div>
 
           {mainTotalPages > 1 && (
             <div className="signature-dots">
+
               {Array.from({
                 length: mainTotalPages
               }).map((_, index) => (
+
                 <button
                   type="button"
                   key={index}
+
                   className={`dot ${
                     index === mainCardsPage
                       ? 'active'
                       : ''
                   }`}
+
                   onClick={() =>
                     setMainCardsPage(index)
                   }
+
                   aria-label={`Go to collection page ${
                     index + 1
                   }`}
                 />
+
               ))}
+
             </div>
           )}
+
         </div>
+
       ) : (
+
         /* =====================================================
-            SUB CATEGORY VIEW
+           SUB CATEGORY VIEW
         ===================================================== */
 
         <div className="category-block active-subview">
+
           <div className="signature-grid-wrapper">
 
             {isScrollable && (
@@ -813,18 +808,17 @@ const Collections = () => {
                   : ''
               }`}
             >
+
               {visibleItems.map((item) => (
+
                 <article
                   className="signature-card"
                   key={`${selectedCategory.id}-${item.id}`}
                 >
-                  <div
-                    className={`signature-img-wrapper ${
-                      item.imageFit === 'contain'
-                        ? 'contain-image'
-                        : ''
-                    }`}
-                  >
+
+                  {/* SAME IMAGE WRAPPER FOR EVERY SUB CARD */}
+
+                  <div className="signature-img-wrapper">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -834,6 +828,7 @@ const Collections = () => {
                   </div>
 
                   <div className="signature-content">
+
                     <div className="signature-icon-circle">
                       <span className="icon-symbol">
                         ✦
@@ -847,9 +842,13 @@ const Collections = () => {
                     <p className="item-description">
                       {item.description}
                     </p>
+
                   </div>
+
                 </article>
+
               ))}
+
             </div>
 
             {isScrollable && (
@@ -862,33 +861,44 @@ const Collections = () => {
                 →
               </button>
             )}
+
           </div>
 
           {totalPages > 1 && (
             <div className="signature-dots">
+
               {Array.from({
                 length: totalPages
               }).map((_, index) => (
+
                 <button
                   type="button"
                   key={index}
+
                   className={`dot ${
                     index === activePage
                       ? 'active'
                       : ''
                   }`}
+
                   onClick={() =>
                     setActivePage(index)
                   }
+
                   aria-label={`Go to page ${
                     index + 1
                   }`}
                 />
+
               ))}
+
             </div>
           )}
+
         </div>
+
       )}
+
     </section>
   );
 };

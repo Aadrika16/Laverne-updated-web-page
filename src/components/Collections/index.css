@@ -16,14 +16,9 @@
 
 .collections-section {
   width: 100%;
-
-  padding: 50px 8%;
-  padding-top:20px;
-
+  padding: 55px 4%;
   overflow: hidden;
-
   background-color: #f7f4ee;
-
   text-align: center;
 }
 
@@ -34,38 +29,34 @@
 
 .signature-header {
   max-width: 850px;
-
-  margin: 0 auto 40px;
+  margin: 0 auto 38px;
 }
 
 .section-subtitle {
   display: block;
-
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 3px;
 
   text-transform: uppercase;
-
   color: #888;
 }
 
 .signature-header h2 {
-  margin: 0 0 15px;
+  margin: 0 0 14px;
 
   font-family: serif;
-  font-size: 42px;
-  font-weight: normal;
+  font-size: 40px;
+  font-weight: 400;
   line-height: 1.15;
 
   color: #1a1a1a;
 }
 
 .section-desc {
-  max-width: 520px;
-
+  max-width: 540px;
   margin: 0 auto;
 
   font-size: 14px;
@@ -81,16 +72,12 @@
 
 .selected-category-description {
   max-width: 650px;
-
   margin: 5px auto 0;
 
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.55;
 
   color: #6f665d;
-
-  text-align: center;
 }
 
 
@@ -114,15 +101,14 @@
 
 .back-to-main-btn {
   margin-top: 15px;
+  padding: 9px 16px;
 
-  padding: 9px 15px;
-
-  border: 1px solid transparent;
+  border: 1px solid #ead8c1;
   border-radius: 30px;
 
   background: transparent;
 
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
 
   color: #a06e3b;
@@ -130,17 +116,15 @@
   cursor: pointer;
 
   transition:
-    opacity 0.25s ease,
     transform 0.25s ease,
-    border-color 0.25s ease;
+    opacity 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .back-to-main-btn:hover {
-  opacity: 0.8;
-
   transform: translateX(-3px);
-
-  border-color: #e8d5bc;
+  background-color: #fff;
+  opacity: 0.9;
 }
 
 
@@ -155,8 +139,11 @@
   align-items: center;
 
   width: 100%;
+  max-width: 1550px;
 
-  gap: 15px;
+  margin: 0 auto;
+
+  gap: 16px;
 }
 
 
@@ -170,9 +157,11 @@
   grid-template-columns:
     repeat(3, minmax(0, 1fr));
 
+  align-items: stretch;
+
   width: 100%;
 
-  gap: 25px;
+  gap: 26px;
 }
 
 
@@ -184,7 +173,7 @@
   grid-template-columns:
     repeat(2, minmax(0, 1fr));
 
-  max-width: 850px;
+  max-width: 1050px;
 
   margin: 0 auto;
 }
@@ -209,7 +198,7 @@
   border: 1px solid #eee6db;
   border-radius: 16px;
 
-  background-color: #ffffff;
+  background-color: #fff;
 
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.04);
@@ -232,14 +221,19 @@
 
 
 /* =========================================================
-   IMAGE
+   ALL CARD IMAGES (UPDATED FOR FULL HEIGHT DISPLAY)
 ========================================================= */
 
 .signature-img-wrapper {
   position: relative;
 
   width: 100%;
-  height: 320px;
+
+  height: auto;
+  min-height: 420px;
+  max-height: none;
+
+  flex: 0 0 auto;
 
   overflow: hidden;
 
@@ -252,16 +246,24 @@
   width: 100%;
   height: 100%;
 
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
+  object-position: center center;
+  background-color: #f2efe9;
+
+  image-rendering: auto;
 
   transition:
     transform 0.45s ease;
 }
 
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
 .signature-card:hover
 .signature-img-wrapper img {
-  transform: scale(1.025);
+  transform: scale(1.02);
 }
 
 
@@ -278,13 +280,17 @@
 
   flex: 1;
 
-  min-height: 145px;
+  width: 100%;
+  min-height: 150px;
 
-  padding: 25px 20px 22px;
+  padding:
+    27px
+    20px
+    20px;
 
   text-align: center;
 
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 
@@ -300,8 +306,8 @@
   width: 45px;
   height: 45px;
 
-  margin-top: -48px;
-  margin-bottom: 15px;
+  margin-top: -49px;
+  margin-bottom: 14px;
 
   flex-shrink: 0;
 
@@ -316,7 +322,6 @@
 
 .icon-symbol {
   font-size: 16px;
-
   color: #a06e3b;
 }
 
@@ -330,67 +335,35 @@
 
   font-family: serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.3;
 
   color: #222;
-
-  text-align: center;
 }
 
 
 /* =========================================================
-   MAIN CATEGORY DESCRIPTION
-========================================================= */
-
-.category-card-description {
-  width: 100%;
-  max-width: 330px;
-
-  margin: 0 auto 15px;
-
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.5;
-
-  color: #666;
-
-  text-align: center;
-}
-
-
-/* =========================================================
-   SUB ITEM DESCRIPTION
-========================================================= */
-
-.item-description {
-  width: 100%;
-  max-width: 340px;
-
-  margin: 0 auto;
-
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.5;
-
-  color: #777067;
-
-  text-align: center;
-}
-
-
-/* =========================================================
-   KEEP DESCRIPTION SHORT
+   DESCRIPTION
 ========================================================= */
 
 .category-card-description,
 .item-description {
+  width: 100%;
+  max-width: 390px;
+
+  margin: 0 auto 14px;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: #6f665d;
+
   display: -webkit-box;
 
   overflow: hidden;
 
   -webkit-box-orient: vertical;
- 
+  -webkit-line-clamp: 2;
 }
 
 
@@ -401,18 +374,22 @@
 .explore-subtext {
   margin-top: auto;
 
-  padding-top: 5px;
+  padding-top: 8px;
 
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 600;
   line-height: 1.4;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
 
   color: #a06e3b;
 }
 
 
 /* =========================================================
-   ARROW BUTTONS
+   ARROW BUTTONS (FIXED MOVEMENT BUG)
 ========================================================= */
 
 .carousel-arrow {
@@ -430,7 +407,7 @@
   border: 1px solid #ebdcc5;
   border-radius: 50%;
 
-  background-color: #ffffff;
+  background-color: #fff;
 
   color: #1a1a1a;
 
@@ -444,25 +421,20 @@
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
-    border-color 0.3s ease,
-    transform 0.3s ease;
+    box-shadow 0.3s ease;
 
   z-index: 10;
 }
 
 .carousel-arrow:hover {
-  border-color: #a06e3b;
-
   background-color: #a06e3b;
-
-  color: #ffffff;
-
-  transform: scale(1.06);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 
 /* =========================================================
-   PAGINATION DOTS
+   DOTS
 ========================================================= */
 
 .signature-dots {
@@ -470,7 +442,7 @@
   align-items: center;
   justify-content: center;
 
-  margin-top: 30px;
+  margin-top: 28px;
 
   gap: 8px;
 }
@@ -481,7 +453,7 @@
 
   padding: 0;
 
-  border: 0;
+  border: none;
   border-radius: 50%;
 
   background-color:
@@ -504,6 +476,52 @@
 
 
 /* =========================================================
+   LARGE DESKTOP
+   1440px AND ABOVE
+========================================================= */
+
+@media (min-width: 1440px) {
+
+  .signature-grid-wrapper {
+    max-width: 1600px;
+  }
+
+  .signature-img-wrapper {
+    min-height: 450px;
+  }
+
+  .signature-content {
+    min-height: 155px;
+  }
+}
+
+
+/* =========================================================
+   LARGE TABLET / SMALL LAPTOP
+   1200px AND BELOW
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .collections-section {
+    padding: 50px 4%;
+  }
+
+  .signature-grid {
+    gap: 22px;
+  }
+
+  .signature-img-wrapper {
+    min-height: 380px;
+  }
+
+  .signature-content {
+    min-height: 145px;
+  }
+}
+
+
+/* =========================================================
    TABLET
    1024px AND BELOW
 ========================================================= */
@@ -511,12 +529,11 @@
 @media (max-width: 1024px) {
 
   .collections-section {
-    padding:
-      70px 5%;
+    padding: 55px 5%;
   }
 
   .signature-header {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   .signature-header h2 {
@@ -531,21 +548,20 @@
   }
 
   .signature-grid.two-items-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-
-    max-width: 750px;
+    max-width: 780px;
   }
 
   .signature-img-wrapper {
-    height: 280px;
+    min-height: 350px;
   }
 
   .signature-content {
     min-height: 145px;
 
     padding:
-      23px 18px 20px;
+      25px
+      18px
+      20px;
   }
 
   .signature-content h3 {
@@ -554,15 +570,7 @@
 
   .category-card-description,
   .item-description {
-    max-width: 300px;
-
     font-size: 12.5px;
-  }
-
-  .selected-category-description {
-    max-width: 520px;
-
-    font-size: 13.5px;
   }
 
   .carousel-arrow {
@@ -571,7 +579,6 @@
 
     font-size: 17px;
   }
-
 }
 
 
@@ -584,7 +591,8 @@
 
   .collections-section {
     padding:
-      55px 20px;
+      50px
+      20px;
   }
 
   .signature-header {
@@ -595,6 +603,7 @@
     margin-bottom: 9px;
 
     font-size: 9px;
+
     letter-spacing: 2.4px;
   }
 
@@ -602,49 +611,49 @@
     margin-bottom: 11px;
 
     font-size: 30px;
+
     line-height: 1.2;
   }
 
   .section-desc {
     width: 92%;
+
     max-width: 450px;
 
     font-size: 13px;
+
     line-height: 1.55;
   }
 
   .selected-category-description {
     width: 92%;
+
     max-width: 450px;
 
-    margin-top: 5px;
-
     font-size: 13px;
-    line-height: 1.5;
   }
 
   .catalog-header-divider {
     width: 42px;
-
-    margin-top: 14px;
   }
 
   .back-to-main-btn {
-    margin-top: 11px;
-
     font-size: 13px;
   }
 
 
-  /* =======================================================
-     MOBILE GRID
-  ======================================================= */
+  /* MOBILE GRID */
+
+  .signature-grid-wrapper {
+    display: block;
+  }
 
   .signature-grid,
   .signature-grid.two-items-grid {
     grid-template-columns: 1fr;
 
     width: 100%;
+
     max-width: 500px;
 
     margin: 0 auto;
@@ -652,18 +661,10 @@
     gap: 22px;
   }
 
-  .signature-grid-wrapper {
-    display: block;
-  }
 
-
-  /* =======================================================
-     MOBILE CARD
-  ======================================================= */
+  /* MOBILE CARD */
 
   .signature-card {
-    width: 100%;
-
     border-radius: 14px;
   }
 
@@ -671,16 +672,19 @@
     transform: none;
   }
 
-  .signature-img-wrapper.contain-image {
-  height: 400px;
-}
 
-  /* =======================================================
-     MOBILE IMAGE
-  ======================================================= */
+  /* MOBILE IMAGE */
 
   .signature-img-wrapper {
-    height: 300px;
+    min-height: 380px;
+  }
+
+  .signature-img-wrapper img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
   }
 
   .signature-card:hover
@@ -689,79 +693,51 @@
   }
 
 
-  /* =======================================================
-     MOBILE CONTENT
-  ======================================================= */
+  /* MOBILE CONTENT */
 
   .signature-content {
-    min-height: auto;
+    min-height: 150px;
 
     padding:
-      24px 18px 21px;
+      26px
+      18px
+      21px;
   }
 
   .signature-icon-circle {
     width: 42px;
     height: 42px;
 
-    margin-top: -45px;
+    margin-top: -46px;
     margin-bottom: 13px;
   }
 
-  .icon-symbol {
-    font-size: 15px;
-  }
-
   .signature-content h3 {
-    margin-bottom: 7px;
-
     font-size: 18px;
   }
 
   .category-card-description,
   .item-description {
     width: 94%;
-    max-width: 380px;
+
+    max-width: 390px;
 
     font-size: 12.5px;
-    line-height: 1.5;
   }
 
   .explore-subtext {
-    margin-top: 12px;
+    margin-top: 10px;
 
-    font-size: 11.5px;
+    font-size: 11px;
   }
-
-
-  /* =======================================================
-     MOBILE ARROWS
-  ======================================================= */
 
   .carousel-arrow {
     display: none;
   }
 
-
-  /* =======================================================
-     MOBILE DOTS
-  ======================================================= */
-
   .signature-dots {
     margin-top: 22px;
-
-    gap: 7px;
   }
-
-  .dot {
-    width: 7px;
-    height: 7px;
-  }
-
-  .dot.active {
-    width: 22px;
-  }
-
 }
 
 
@@ -774,7 +750,8 @@
 
   .collections-section {
     padding:
-      45px 14px;
+      42px
+      14px;
   }
 
   .signature-header {
@@ -783,6 +760,7 @@
 
   .section-subtitle {
     font-size: 8px;
+
     letter-spacing: 2px;
   }
 
@@ -790,12 +768,7 @@
     font-size: 26px;
   }
 
-  .section-desc {
-    width: 96%;
-
-    font-size: 12px;
-  }
-
+  .section-desc,
   .selected-category-description {
     width: 96%;
 
@@ -817,26 +790,35 @@
     border-radius: 12px;
   }
 
+
+  /* SMALL MOBILE IMAGE */
+
   .signature-img-wrapper {
-    height: 260px;
+    min-height: 340px;
   }
 
+
+  /* SMALL MOBILE CONTENT */
+
   .signature-content {
+    min-height: 145px;
+
     padding:
-      22px 15px 18px;
+      23px
+      15px
+      19px;
   }
 
   .signature-icon-circle {
     width: 40px;
     height: 40px;
 
-    margin-top: -42px;
-    margin-bottom: 11px;
+    margin-top: -44px;
+    margin-bottom: 12px;
   }
 
   .signature-content h3 {
     font-size: 17px;
-    line-height: 1.3;
   }
 
   .category-card-description,
@@ -844,19 +826,15 @@
     width: 96%;
 
     font-size: 12px;
-    line-height: 1.45;
   }
 
   .explore-subtext {
-    margin-top: 10px;
-
-    font-size: 11px;
+    font-size: 10.5px;
   }
 
   .signature-dots {
-    margin-top: 19px;
+    margin-top: 18px;
   }
-
 }
 
 
@@ -869,7 +847,8 @@
 
   .collections-section {
     padding:
-      40px 10px;
+      38px
+      10px;
   }
 
   .signature-header h2 {
@@ -877,12 +856,16 @@
   }
 
   .signature-img-wrapper {
-    height: 230px;
+    min-height: 300px;
   }
 
   .signature-content {
+    min-height: 135px;
+
     padding:
-      21px 12px 17px;
+      21px
+      12px
+      17px;
   }
 
   .signature-content h3 {
@@ -893,5 +876,4 @@
   .item-description {
     font-size: 11.5px;
   }
-
 }
