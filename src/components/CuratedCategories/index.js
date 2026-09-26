@@ -143,7 +143,7 @@ const categoriesData = [
     title: "Carpets & Flooring",
     description: "Curated flooring and carpets designed to ground interiors with warmth, texture and character.",
     image:
-      "./c&f/c&f1.webp",
+      "/c&f/c&f1.webp",
 
      items: [
       {
@@ -151,35 +151,35 @@ const categoriesData = [
         title: "1. Ocean Flow Rug",
         description: "A rug that evokes the gentle movement of ocean waves, bringing a sense of calm and serenity to your space.",
         image:
-          "./c&f/c&f1.webp"
+          "/c&f/c&f1.webp"
       },
       {
         id: 2,
         title: "2. Soft Geometry Rug",
         description: "A rug with a subtle geometric pattern that adds visual interest without overwhelming the space.",
         image:
-          "./c&f/c&f2.webp"
+          "/c&f/c&f2.webp"
       },
       {
         id: 3,
         title: "3. Warm Wave Rug",
         description: "A rug that brings a sense of warmth and movement to any room.",
         image:
-          "./c&f/c&f3.webp"
+          "/c&f/c&f3.webp"
       },
       {
         id: 4,
         title: "4. Modern Grid Carpet",
         description: "A modern take on the classic grid pattern, perfect for adding structure to any room.",
         image:
-          "./c&f/c&f4.webp"
+          "/c&f/c&f4.webp"
       },
       {
         id: 5,
         title: "5. Geo Office Carpet",
         description: "A carpet with a geometric pattern that adds a contemporary touch to office spaces.",
         image:
-          "./c&f/c&f5.webp"
+          "/c&f/c&f5.webp"
       }
     ]
   },
@@ -304,7 +304,7 @@ const categoriesData = [
     title: "Furniture & Curtains",
     description: "Elegant curtains designed to add warmth, privacy, and style to any room.",
     image:
-      "./f&c/c1.webp",
+      "/f&c/c1.webp",
 
     items: [
       {
@@ -312,35 +312,35 @@ const categoriesData = [
         title: "1. Classic Beige Drapes",
         description: "Elegant curtains in a classic beige tone, perfect for adding warmth and sophistication to any room.",
         image:
-          "./f&c/c1.webp"
+          "/f&c/c1.webp"
       },
       {
         id: 2,
         title: "2. Sage Serenity Curtains",
         description: "Elegant curtains in a soothing sage green tone, perfect for creating a tranquil atmosphere.",
         image:
-          "./f&c/c2.webp"
+          "/f&c/c2.webp"
       },
       {
         id: 3,
         title: "3. Warm Bronze Elegance",
         description: "Elegant curtains in a warm bronze tone, perfect for adding a touch of luxury to any room.",
         image:
-          "./f&c/c3.webp"
+          "/f&c/c3.webp"
       },
       {
         id: 4,
         title: "4. Teal & Neutral Harmony",
         description: "A modern take on the classic grid pattern, perfect for adding structure to any room.",
         image:
-          "./f&c/c6.webp"
+          "/f&c/c6.webp"
       },
       {
         id: 5,
         title: "5. Golden Luxe Drapes",
         description: "Elegant curtains in a luxurious golden tone, perfect for adding a touch of opulence to any room.",
         image:
-          "./f&c/c5.webp"
+          "/f&c/c5.webp"
       }
     ]
   },

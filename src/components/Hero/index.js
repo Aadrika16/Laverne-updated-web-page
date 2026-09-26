@@ -31,7 +31,7 @@ const slides = [
     subtitle: "Warm, beautifully crafted indoor play spaces created for imagination, discovery, and everyday play."
   },
   {
-    desktopImage: "/desktopview-carousals/treehouse01.webp",
+    desktopImage: "/desktopview-carousals/Treehousefinal.png",
     mobileImage: "/mobileviewcarousals/Treehousefinal.png",
     alt: "Daytime Treehouse",
     title: "Play Beyond The Walls",
@@ -103,7 +103,16 @@ const Hero = () => {
           {/* Picture element handles swapping between desktop and mobile sources automatically */}
           <picture className="hero-img-container">
             <source media="(max-width: 768px)" srcSet={slide.mobileImage} />
-            <img src={slide.desktopImage} alt={slide.alt} className="hero-img" />
+            <img
+              src={slide.desktopImage}
+              alt={slide.alt}
+              className="hero-img"
+              loading={index === currentSlide ? 'eager' : 'lazy'}
+              decoding="async"
+              fetchPriority={index === currentSlide ? 'high' : 'auto'}
+              width="1600"
+              height="900"
+            />
           </picture>
           
           <div className="hero-content-wrapper">
