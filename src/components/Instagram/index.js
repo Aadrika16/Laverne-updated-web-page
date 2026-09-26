@@ -46,8 +46,8 @@ const Instagram = () => {
           .slice(0, 6)
           .map((post) => ({
             id: post.id || Math.random(),
-            // Safely extracts from Behold's optimized sizes object or direct media urls
-            url: post.sizes?.medium?.mediaUrl || post.sizes?.large?.mediaUrl || post.mediaUrl || post.thumbnailUrl,
+            // Prefer the original aspect-preserving image, with smaller fallbacks.
+            url: post.sizes?.full?.mediaUrl || post.sizes?.large?.mediaUrl || post.sizes?.medium?.mediaUrl || post.mediaUrl || post.thumbnailUrl,
             permalink: post.permalink || "https://instagram.com/lavernestudio.in",
             likes: post.likeCount || '0',
             comments: post.commentsCount || '0'
